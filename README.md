@@ -9,8 +9,13 @@ The figure below illustrates the virtual vehicle developed using Simscape and it
 
 ![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
 
+These signals enable real-time interaction between the thermodynamic model and the system-level.
 
-These signals enable real-time interaction between the compressor model and the system-level.
+### Motor
+The electric motor is driven by the HV network and is mechanically connected to the vehicle’s rear axle. The virtual vehicle can be easily extended to describe other powertrain architectures (e.g., front or all-wheel drive). The motor’s characteristics and losses are modelled with efficiency maps. Its temperature depends upon the electrical losses and its thermal mass. To transmit the torque to the wheels, the motor is coupled with a gearbox with a constant transmission ratio. The gearbox losses are modelled with a constant efficiency.
+
+<img width="667" height="355" alt="image" src="https://github.com/user-attachments/assets/f3edb1b4-2ced-4a80-a54c-bf2737af476e" />
+
 
 The original vehicle-level architecture provides the foundation for investigating the interaction between electrical, mechanical, control and thermal domains. The focus of this repository is the engineering optimization of electromechanical motion systems and their interfaces, rather than the development of a complete vehicle model. The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
