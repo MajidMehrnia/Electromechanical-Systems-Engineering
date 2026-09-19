@@ -1,7 +1,7 @@
 
 
 ## Description
-This repository delivers a comprehensive, systems-engineering framework for thermal management, designed specifically to tackle the thermodynamic challenges of operating in the wide range temperature. The project bridges the gap between complex multi-physics engineering and strategic product lifecycle governance. To provide a clean, modular overview, the technical documentation and artifacts are divided into two distinct sections: 
+This repository focuses on the modeling, dynamic simulation, and thermal analysis of **electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and liquid cooling loops**. This project extracts and evaluates key engineering performance metrics relevant to precision motion control, high-torque density electric motors, and power electronics thermal protection under real-world drive cycles and heavy duty transients.
 
 The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
