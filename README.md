@@ -7,7 +7,8 @@ This repository focuses on the modeling, dynamic simulation, and thermal analysi
 
 The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  
 
-![Sim_diagram](https://github.com/user-attachments/assets/9ac5de1f-6cb7-4017-9ff3-9ec4309d36f7)
+<img width="1144" height="640" alt="Refrig_System" src="https://github.com/user-attachments/assets/b14855a5-5004-408c-a9f7-e2b3c1fef69c" />
+
 
 These signals enable real-time interaction between the thermodynamic model and the system-level.
 
@@ -74,7 +75,9 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 
 <strong style="color:red;">Simulation Results from Simscape Logging</strong>
 
-<img width="959" height="577" alt="BraytonCycleGasTurbineExample_05" src="https://github.com/user-attachments/assets/317acdc4-4f66-4287-827e-1f1a54f96aa2" />
+<img width="975" height="492" alt="T_vs_t_Motor_Battery" src="https://github.com/user-attachments/assets/f6526b99-67fe-4be3-97a3-2bf96466c894" />
+
+<img width="1088" height="534" alt="HF-1" src="https://github.com/user-attachments/assets/87254f23-f38a-4114-9edc-318406de2367" />
 
 
 ## Support
