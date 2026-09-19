@@ -5,9 +5,9 @@ This repository focuses on the modeling, dynamic simulation, and thermal analysi
 
 The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
-The complete executable models and the underlying management tool are available below:
+The complete executable models and the underlying management tool is available below:
 
-* Access the Simulink and GT-SUITE co-simulation files in the [Simulation](input_data) and [Results](results) directories.
+* Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
 
 <p align="center">
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
