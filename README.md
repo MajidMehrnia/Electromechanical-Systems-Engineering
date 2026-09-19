@@ -14,7 +14,7 @@ The figure below illustrates the virtual vehicle developed using Simscape and it
 These signals enable real-time interaction between the thermodynamic model and the system-level.
 
 ### Motor
-The electric motor is driven by the HV network and is mechanically connected to the vehicle’s rear axle. The virtual vehicle can be easily extended to describe other powertrain architectures (e.g., front or all-wheel drive). The motor’s characteristics and losses are modelled with efficiency maps. Its temperature depends upon the electrical losses and its thermal mass. To transmit the torque to the wheels, the motor is coupled with a gearbox with a constant transmission ratio. The gearbox losses are modelled with a constant efficiency.
+The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
 <img width="667" height="355" alt="image" src="https://github.com/user-attachments/assets/f3edb1b4-2ced-4a80-a54c-bf2737af476e" />
 
