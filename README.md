@@ -17,6 +17,12 @@ The electric motor is driven by the HV network and is mechanically connected to 
 <img width="667" height="355" alt="image" src="https://github.com/user-attachments/assets/f3edb1b4-2ced-4a80-a54c-bf2737af476e" />
 
 
+## Overview
+
+This repository presents a model-based engineering study of an integrated electric vehicle system using **MATLAB, Simulink, Simscape and GT-SUITE**. The simulation architecture is used to investigate the interaction between **electric motors, power electronics, mechanical driveline, control systems, thermal systems and vehicle-level operating scenarios**. The engineering focus is on the development and analysis of **electromechanical motion systems** and the interfaces between:
+
+**Electrical Power → Drive & Control → Motor → Mechanical Transmission → System Load**
+
 The original vehicle-level architecture provides the foundation for investigating the interaction between electrical, mechanical, control and thermal domains. The focus of this repository is the engineering optimization of electromechanical motion systems and their interfaces, rather than the development of a complete vehicle model. The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
 The complete executable models and the underlying management tool is available below:
@@ -26,13 +32,6 @@ The complete executable models and the underlying management tool is available b
 <p align="center">
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
 </p>
-
-## Overview
-
-This repository presents a model-based engineering study of an integrated electric vehicle system using **MATLAB, Simulink, Simscape and GT-SUITE**. The simulation architecture is used to investigate the interaction between **electric motors, power electronics, mechanical driveline, control systems, thermal systems and vehicle-level operating scenarios**. The engineering focus is on the development and analysis of **electromechanical motion systems** and the interfaces between:
-
-**Electrical Power → Drive & Control → Motor → Mechanical Transmission → System Load**
-
 ---
 
 ## Engineering Focus
