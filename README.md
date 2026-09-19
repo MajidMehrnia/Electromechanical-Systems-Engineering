@@ -1,6 +1,5 @@
 
 # Motion Control & Electromechanical Systems Engineering
-### Model-Based Development | Motor & Drive Systems | Controls | Power Transmission | System Simulation
 
 ## Description
 This repository focuses on the modeling, dynamic simulation, and thermal analysis of **electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and liquid cooling loops**. This project extracts and evaluates key engineering performance metrics relevant to precision motion control, high-torque density electric motors, and power electronics thermal protection under real-world drive cycles and heavy duty transients.
