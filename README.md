@@ -21,6 +21,7 @@ The electric motor is driven by the power drive electronics and is mechanically 
 
 
 ## Overview
+<img width="1226" height="364" alt="image" src="https://github.com/user-attachments/assets/567c381d-a811-4ea5-a1e1-e61f3a3767bc" />
 
 This repository presents a model-based engineering study of an integrated electric vehicle system using **MATLAB, Simulink, Simscape and GT-SUITE**. The simulation architecture is used to investigate the interaction between **electric motors, power electronics, mechanical driveline, control systems, thermal systems and vehicle-level operating scenarios**. The engineering focus is on the development and analysis of **electromechanical motion systems** and the interfaces between:
 
