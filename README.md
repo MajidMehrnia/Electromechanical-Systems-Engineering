@@ -6,8 +6,9 @@
 This repository focuses on the modeling, dynamic simulation, and thermal analysis of **electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and liquid cooling loops**. This project extracts and evaluates key engineering performance metrics relevant to precision motion control, high-torque density electric motors, and power electronics thermal protection under real-world drive cycles and heavy duty transients.
 
 The figure below illustrates the virtual vehicle developed using Simscape and its add-on products.  
+<img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
 
-<img width="1144" height="640" alt="Refrig_System" src="https://github.com/user-attachments/assets/b14855a5-5004-408c-a9f7-e2b3c1fef69c" />
+
 
 
 These signals enable real-time interaction between the thermodynamic model and the system-level.
