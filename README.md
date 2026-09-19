@@ -22,8 +22,8 @@ The electric motor is driven by the power drive electronics and is mechanically 
 ## Overview
 
 <p align="center">
+ <b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
 <img width="1226" height="364" alt="image" src="https://github.com/user-attachments/assets/567c381d-a811-4ea5-a1e1-e61f3a3767bc" />
-<b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
 </p>
 An integrated ECAD–MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. Electrical design data, interfaces and connectivity are therefore linked to the MATLAB/Simulink/Simscape/GT-SUITE models used to analyze the EV system. This enables traceability from electrical requirements → E/E architecture → power and control interfaces → electromechanical system models → mechanical integration → verification and PLM release.
 
