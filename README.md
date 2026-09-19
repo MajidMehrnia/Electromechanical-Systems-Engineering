@@ -39,13 +39,6 @@ This repository presents a model-based engineering study of an integrated electr
 
 The original vehicle-level architecture provides the foundation for investigating the interaction between electrical, mechanical, control and thermal domains. The focus of this repository is the engineering optimization of electromechanical motion systems and their interfaces, rather than the development of a complete vehicle model. The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
-The complete executable models and the underlying management tool is available below:
-
-* Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
-
-<p align="center">
- <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
-</p>
 
 
 
@@ -63,6 +56,14 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 <p align="center">
 <img width="731" height="523" alt="530534618-effea2f7-4077-4bf4-82ef-bf2cce446ec7" src="https://github.com/user-attachments/assets/822cede5-fdb1-4b8e-8a0d-c17b794ed56b" />
 
+
+The complete executable models and the underlying management tool is available below:
+
+* Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
+
+<p align="center">
+ <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
+</p>
 ## Support
 For any questions regarding the model place a comment in the repository.
 
