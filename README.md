@@ -13,11 +13,72 @@ The complete executable models and the underlying management tool are available 
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
 </p>
 
+# Motion Control & Electromechanical Systems Engineering
+### Model-Based Development | Motor & Drive Systems | Controls | Power Transmission | System Simulation
+
+![System Architecture](docs/system-architecture.png)
+
+## Overview
+
+This repository presents a model-based engineering study of an integrated electric vehicle system using **MATLAB, Simulink, Simscape and GT-SUITE**.
+
+The simulation architecture is used to investigate the interaction between **electric motors, power electronics, mechanical driveline, control systems, thermal systems and vehicle-level operating scenarios**.
+
+The engineering focus is on the development and analysis of **electromechanical motion systems** and the interfaces between:
+
+**Electrical Power → Drive & Control → Motor → Mechanical Transmission → System Load**
+
+---
+
+## Engineering Focus
+
+The model is structured around the engineering disciplines relevant to modern motion-control and electromechanical products:
+
+- Motor and drive-system behavior
+- Electromechanical power conversion
+- Motor speed and torque response
+- Mechanical power transmission
+- Driveline dynamics
+- Control-system architecture
+- Closed-loop system behavior
+- Power electronics interfaces
+- Electrical and thermal system interaction
+- System-level simulation and performance analysis
+- Model-based engineering and virtual validation
+
+---
+
+## System Architecture
+
+The vehicle model integrates multiple engineering domains within a common simulation environment:
+
+```text
+                 CONTROL & SCENARIO MANAGEMENT
+                              │
+                              ▼
+                    Command / Operating State
+                              │
+                              ▼
+                       Motor / Drive System
+                              │
+                ┌─────────────┴─────────────┐
+                ▼                           ▼
+          Electrical Power             Torque / Speed
+                │                           │
+                ▼                           ▼
+        Battery / DC-DC                  Driveline
+                │                           │
+                └─────────────┬─────────────┘
+                              ▼
+                       Vehicle System
+                              │
+                              ▼
+                  Thermal Management
+                              │
+                              ▼
+                    System-Level Response
 
 
-You can also utilise the Excel-based PLM workflow here: 📥 [Download PLM Performance Dashboard (Excel)](https://github.com/MajidMehrnia/Systems-Strategy-and-Lifecycle-Leadership/raw/main/PLM-Performance-Dashboard.xlsx)
-
-This PLM Dashboard is structured into 7 core sheets (including **Doc. Management**, **EBOM & MBOM Management**, **Change Management**, **Validation & Release Management**, **Risk Management**, **Cost Benefit Analysis**, and an **Executive Reporting Dashboard**) establishing a "Single Source of Truth" to bridge technical execution and executive transparency with business profitability.
 
 ## Design & Validation 
 
