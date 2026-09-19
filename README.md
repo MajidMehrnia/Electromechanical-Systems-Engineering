@@ -3,23 +3,11 @@
 ## Description
 This repository delivers a comprehensive, systems-engineering framework for thermal management, designed specifically to tackle the thermodynamic challenges of operating in the wide range temperature. The project bridges the gap between complex multi-physics engineering and strategic product lifecycle governance. To provide a clean, modular overview, the technical documentation and artifacts are divided into two distinct sections: 
 
-* **Section 1:** Covers the macro-level conceptual thermal management architecture and links to the foundational system design. Available in my companion repository: [Integrated-Hardware-Software-Thermal-Management-Solutions](https://github.com/MajidMehrnia/Data-Center-Process-Cooling)
-  
-* **Section 2:** The following section focuses on the hardware-level co-simulation framework, transient control validation, and the overarching PLM governance model.
-
-# System Design, Validation & Strategic Governance
-
-To bridge the gap between abstract thermodynamics and physical deployment, this specific repository delivers a high-fidelity co-simulation framework executed primarily within MATLAB/Simulink and Simscape, with a dedicated interface to GT-SUITE. The complete plant model, including the evaporator, condenser, and secondary hydronic coolant loops with their thermal inertia against the ambient tropical sink, is built within Simscape using R717 (Ammonia) as the working fluid. To capture the complex, real-gas multi-physics and dynamic stall behaviors of the centrifugal compressor stage, a high-fidelity model from GT-SUITE is dynamically linked into the main simulation loop. Parallelly, the core control logic in Simulink house-tunes the algorithms that dynamically modulate compressor operating speeds and expansion valve configurations to stabilize process fluid temperatures under volatile server heat loads.
-
-Managing a multi-domain system of this complexity requires rigid configuration control to prevent costly field failures or supply chain bottlenecks. Current industry practices show that global enterprises typically deploy enterprise-grade PLM platforms to govern these workflows, such as **Dassault Systèmes ENOVIA (3DEXPERIENCE)** or **Siemens Teamcenter**. Conversely, in smaller companies, lean business units, or agile environments, this governance is more commonly executed utilizing highly structured, **macro-enabled spreadsheets** integrated with disciplined, email-driven formal sign-offs.
-
-Consequently, the entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
+The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
 The complete executable models and the underlying management tool are available below:
 
 * Access the Simulink and GT-SUITE co-simulation files in the [Simulation](input_data) and [Results](results) directories.
-* Utilize the integrated lifecycle management workbook here: [PLM Performance Dashboard](https://github.com/MajidMehrnia/Systems-Strategy-and-Lifecycle-Leadership/raw/main/PLM-Performance-Dashboard.xlsx)
-
 
 <p align="center">
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
