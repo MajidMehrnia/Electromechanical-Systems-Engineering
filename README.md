@@ -11,6 +11,20 @@ The figure below illustrates the virtual vehicle developed using Simscape and it
 To enhance model fidelity and accelerate the design process, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related CFD and AI/ML developments are available in my companion repository: 
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
+## Project Structure
+
+1. [System Architecture](#01-system-architecture)
+2. [Motor Model](#02-motor-model)
+3. [Drive & Power Electronics](#03-drive--power-electronics)
+4. [Gearbox & Mechanical Load](#04-gearbox--mechanical-load)
+5. [Motion Control](#05-motion-control)
+6. [Electro-Thermal Co-Simulation](#06-electro-thermal-co-simulation)
+7. [ECAD & MCAD Interfaces](#07-ecad--mcad-interfaces)
+8. [Embedded Control](#08-embedded-control)
+9. [Verification](#09-verification)
+10. [Results](#10-results)
+
+    
 ### Motor
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
