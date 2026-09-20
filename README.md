@@ -90,7 +90,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 Here we can just publish, a novel ML-based thermodynamic modeling approach has been developed and validated against simulations. Related AI/ML developments are available in my companion repository:
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
-For detailed technical or further information regarding this AI/ML framework, please contact the repository maintainer.
+Detailed technical information on this AI/ML framework is provided in the following sub-sections.
 
 **AI-Integrated System Design & Optimization Software:**
 
