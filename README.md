@@ -24,6 +24,8 @@ The figure below shows the complete electromechanical system architecture co-sim
 <br><br>
 <img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
 <br><br>
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/08c991d2-481e-4477-9fc6-348f638395f1" />
+<br>
 ## 02. Motor & Drive
 
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
@@ -217,8 +219,7 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 <p align="center">
 <img width="731" height="523" alt="530534618-effea2f7-4077-4bf4-82ef-bf2cce446ec7" src="https://github.com/user-attachments/assets/822cede5-fdb1-4b8e-8a0d-c17b794ed56b" />
 <br>
- <img width="1904" height="1064" alt="image" src="https://github.com/user-attachments/assets/25a6d7b7-3a00-43e3-8cba-bfc76327b3b9" />
-<br>
+ 
 ## Support
 For any questions regarding the model place a comment in the repository.
 
