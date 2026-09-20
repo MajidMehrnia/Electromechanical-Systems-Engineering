@@ -86,7 +86,7 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 The proposed software enables a new generation of AI-assisted system design by integrating electro-mechanical based simulations with Artificial Neural Network (ANN) optimization. It significantly reduces development time while maintaining engineering credibility, making it well-suited for OEM-level decision support in electromechanical system development.
 <br>
 
-**AI-Integrated System Design & Optimization Software**
+**AI-Integrated System Design & Optimization Software:**
 
 ### 7.1. Overview
 
