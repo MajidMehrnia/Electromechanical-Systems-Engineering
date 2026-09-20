@@ -66,6 +66,8 @@ The control architecture is designed in **Simulink** to enable precise motor con
 
 ## 05. Electro-Thermal Co-Simulation
 
+This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the refrigerant compressor loop co-simulated directly with Simulink. The circuit models two-phase refrigerant flow through inlet and outlet piping (`PipeRound`) connected between environmental boundary conditions and the compressor unit. Rotational speed commands and boundary states are dynamically exchanged with the Simulink control model via dedicated co-simulation interface ports. A specialized initialization block (`RefrigCircInit`) establishes state convergence for the refrigerant loop to ensure stable transient simulation during vehicle operational cycles.
+
 <img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
 
 
@@ -99,6 +101,8 @@ To enhance model fidelity and accelerate the design process, a novel **ML**-base
 The complete executable models and the underlying management tool is available below:
 
 * Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
+
+This Simscape Data Inspector plot illustrates the transient current waveform ($i_1$) for the DC-DC converter block over a long-term simulation profile of $2.5 \times 10^4\text{ s}$. The time-series response captures steady-state current draw baseline around $0.8\text{ A}$ to $1.0\text{ A}$ interrupted by periodic high-amplitude current spikes reaching up to $2.5\text{ A}$. These dynamic current transients represent cyclic peak power demands from auxiliary low-voltage loads and dynamic charging events within the power distribution network. Analyzing these current profiles is critical for evaluating component electrical stress, conductor sizing, and thermal dissipation management under representative driving scenarios.
 
 <img width="1918" height="793" alt="9-6" src="https://github.com/user-attachments/assets/8eaf0f07-25ab-4d4c-a1bc-33c3a1c1ec37" />
 
