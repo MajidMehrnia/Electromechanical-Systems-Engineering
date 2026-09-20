@@ -3,7 +3,7 @@
 ## Description
 This repository supports a new product development (NPD) program and focuses on the design, modeling, dynamic simulation, and performance analysis of **electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and thermal and electric loops**. This project extracts and evaluates key engineering performance metrics relevant to precision motion control, high-torque-density electric motors, and power electronics thermal management under real-world drive cycles and heavy-duty transients for an Electric Vehicle (EV) sedan.
 
-**Project Novelty:** Integrated co-simulation of mechanical systems (GT-SUITE) with electrical and control loops (Simulink).
+**Project Novelty:** Integrated co-simulation of electrical and control loops (Simulink) with mechanical systems (GT-SUITE).
 
 ## Project Structure
 
