@@ -61,12 +61,12 @@ This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the r
 <img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
 <br><br>
 ## 06. ECAD & MCAD Interfaces
-<br><br>
+<br>
 <p align="center">
  <b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
 <img width="1226" height="364" alt="image" src="https://github.com/user-attachments/assets/567c381d-a811-4ea5-a1e1-e61f3a3767bc" />
 </p>
-<br><br>
+<br>
 An integrated ECAD-MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. Electrical design data, interfaces and connectivity are therefore linked to the MATLAB/Simulink/Simscape/GT-SUITE models used to analyze the EV system. This enables traceability from electrical requirements → E/E architecture → power and control interfaces → electromechanical system models → mechanical integration → verification and PLM release.
 <br><br>
 <p align="center">
