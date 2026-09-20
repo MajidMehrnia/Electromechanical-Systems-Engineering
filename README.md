@@ -38,9 +38,19 @@ The electric motor is driven by the power drive electronics and is mechanically 
 
 ## 04. Motion & Embedded Control
 
+
+The control architecture is designed in **Simulink** to enable precise motor control, dynamic load tracking, and integrated electro-thermal management:
+
+* **Electric Motor & Motion Control:** Executes speed and torque command generation ($T_{cmd}$) based on driver demand ($VehSpdRef$), enabling dynamic load regulation, precise motion tracking, and transient torque control for the electric drive unit.
+* **Thermal Protection & Component Actuation:** Generates closed-loop control signals ($cmd$) for coolant pumps (motor and inverter loops), the refrigerant compressor, and the condenser fan to ensure active thermal protection during high-torque transients.
+* **Multi-Loop Thermal Regulation:** Controls radiator and chiller bypass valves, dynamically switching between series and parallel cooling modes based on real-time component temperatures ($T_{motor}$, $T_{coolant\_inverter\_out}$).
+* **Cabin Climate Management:** Integrates HVAC blower and PTC heater actuation to satisfy climate setpoints ($T_{setpoint}$) without compromising powertrain thermal safety.
+  
 <img width="1918" height="795" alt="9-5" src="https://github.com/user-attachments/assets/9f4ab89b-5ed5-444d-8c9b-95f26ebda8a4" />
 
 ## 05. Electro-Thermal Co-Simulation
+
+<img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
 
 
 ## 06. ECAD & MCAD Interfaces
