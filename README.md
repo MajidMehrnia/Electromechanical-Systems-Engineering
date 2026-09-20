@@ -24,14 +24,18 @@ To enhance model fidelity and accelerate the design process, a novel **ML**-base
 9. [Verification](#09-verification)
 10. [Results](#10-results)
 
-    
-### Motor
+
+## 01. System Architecture
+
+
+## 02. Motor Model
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
 <img width="667" height="355" alt="image" src="https://github.com/user-attachments/assets/f3edb1b4-2ced-4a80-a54c-bf2737af476e" />
 
+## 03. Drive & Power Electronics
 
-## Overview
+## 07. ECAD & MCAD Interfaces
 
 <p align="center">
  <b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
@@ -54,8 +58,12 @@ The original vehicle-level architecture provides the foundation for investigatin
 
 
 
-## Post-processing
+## 10. Results
 
+The complete executable models and the underlying management tool is available below:
+
+* Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
+  
 <strong style="color:red;">Simulation Results from Simscape Logging</strong>
 
 <img width="975" height="492" alt="T_vs_t_Motor_Battery" src="https://github.com/user-attachments/assets/f6526b99-67fe-4be3-97a3-2bf96466c894" />
@@ -69,10 +77,6 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 <img width="731" height="523" alt="530534618-effea2f7-4077-4bf4-82ef-bf2cce446ec7" src="https://github.com/user-attachments/assets/822cede5-fdb1-4b8e-8a0d-c17b794ed56b" />
 
 ## NPI Flowchart
-
-The complete executable models and the underlying management tool is available below:
-
-* Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
 
 <p align="center">
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
