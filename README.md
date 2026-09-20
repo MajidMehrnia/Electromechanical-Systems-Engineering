@@ -73,6 +73,9 @@ To enhance model fidelity and accelerate the design process, a novel **ML**-base
 The complete executable models and the underlying management tool is available below:
 
 * Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
+
+<img width="1918" height="793" alt="9-6" src="https://github.com/user-attachments/assets/8eaf0f07-25ab-4d4c-a1bc-33c3a1c1ec37" />
+
   
 <strong style="color:red;">Simulation Results from Simscape Logging</strong>
 
