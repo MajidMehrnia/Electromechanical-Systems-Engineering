@@ -87,6 +87,10 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 <br><br>
 The proposed software enables a new generation of AI-assisted system design by integrating electro-mechanical based simulations with Artificial Neural Network (ANN) optimization. It significantly reduces development time while maintaining engineering credibility, making it well-suited for OEM-level decision support in electromechanical system development.
 <br>
+Here we can just publish, a novel ML-based thermodynamic modeling approach has been developed and validated against simulations. Related AI/ML developments are available in my companion repository:
+[Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
+
+For detailed technical or further information regarding this AI/ML framework, please contact the repository maintainer.
 
 **AI-Integrated System Design & Optimization Software:**
 
@@ -180,11 +184,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 | **Phase 3** | 3 months | GUI and optimization integration |
 | **Phase 4** | 2 months | OEM demo and reporting automation |
 
-<br><br>
-Here we can just publish, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related AI/ML developments are available in my companion repository:
-[Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
-For detailed technical or further information regarding this AI/ML framework, please contact the repository maintainer.
 
 ## 08. NPI Flowchart
 
