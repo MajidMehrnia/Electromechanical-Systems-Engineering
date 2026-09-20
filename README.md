@@ -216,7 +216,9 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 <br><br>
 <p align="center">
 <img width="731" height="523" alt="530534618-effea2f7-4077-4bf4-82ef-bf2cce446ec7" src="https://github.com/user-attachments/assets/822cede5-fdb1-4b8e-8a0d-c17b794ed56b" />
-<br><br>
+<br>
+ <img width="1904" height="1064" alt="image" src="https://github.com/user-attachments/assets/25a6d7b7-3a00-43e3-8cba-bfc76327b3b9" />
+<br>
 ## Support
 For any questions regarding the model place a comment in the repository.
 
