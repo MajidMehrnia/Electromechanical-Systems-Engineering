@@ -35,17 +35,18 @@ The electric motor is driven by the power drive electronics and is mechanically 
 
 This Simscape Electrical motor and drive block is parameterized at the system level with an enabled thermal port to model physical heat transfer into the cooling loop. The drive unit is configured for a continuous peak torque of 200 N·m and a continuous maximum power of 100 kW with a fast dynamic response defined by a torque control time constant $T_c = 0.002\text{ s}$. System efficiency and electrical losses are captured via 2D lookup tables $P(\omega, T)$ mapped across the full speed and torque operational range. This multi-physics formulation accurately calculates real-time power dissipation losses to evaluate transient electro-thermal performance under demanding drive cycles.
 
+<img width="822" height="718" alt="9-3" src="https://github.com/user-attachments/assets/c20e9d73-40f1-4a95-ae9b-915c3180df53" />
 
-<img width="522" height="418" alt="9-3" src="https://github.com/user-attachments/assets/4258bbc4-0878-4c89-b5d2-305b62115a73" />
 
-<img width="523" height="412" alt="9-4" src="https://github.com/user-attachments/assets/d9590dcb-8e78-456d-b23c-bf49c38252fe" />
+<img width="823" height="712" alt="9-4" src="https://github.com/user-attachments/assets/43cd972f-0459-4ceb-b79f-c389374bc9bb" />
+
 
 
 ## 03. Gearbox & Mechanical Load
 
 This Simscape Driveline Simple Gear block parameterizes the mechanical reduction ratio between the electric motor and the driven axle. The transmission is configured with a continuous reduction gear ratio of $N_F/N_B = 9$ and same-direction output shaft rotation to amplify motor torque delivered to the driveline. Mechanical meshing losses are modeled using a constant efficiency formulation fixed at $97\%$ ($\eta = 0.97$) with a follower power threshold of $0.001\text{ W}$. This high-efficiency mechanical reduction unit enables accurate power transfer calculation and dynamic driveline load evaluation across vehicle operating cycles.
 
-<img width="522" height="435" alt="9-2" src="https://github.com/user-attachments/assets/4f8dac9c-34e5-44fd-b418-bc41db60292b" />
+<img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/f738b58f-ef44-48c9-b39d-2a0d573a8668" />
 
 
 
