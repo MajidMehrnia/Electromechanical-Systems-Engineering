@@ -38,7 +38,6 @@ The figure below shows the complete electromechanical system architecture co-sim
 | **Heating capacity (W PTC) [kW]** | 10 - 20 kW |
 | **Cooling flow rate [l/h]** | 1100 or more |
 
-<br>
 ## 02. Motor & Drive
 
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
