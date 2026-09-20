@@ -28,6 +28,8 @@ The figure below shows the complete electromechanical system architecture co-sim
 <h3 align="center">Integrated Electromechanical & Thermal Management System</h3>
 <br>
 
+<div align="center">
+
 | Parameter | Specification |
 | :--- | :--- |
 | **Voltage range HV / LV [VDC]** | 800 / 24V |
@@ -36,6 +38,8 @@ The figure below shows the complete electromechanical system architecture co-sim
 | **Heating capacity (W/O PTC) [kW]** | 9 kW |
 | **Heating capacity (W PTC) [kW]** | 10 - 20 kW |
 | **Cooling flow rate [l/h]** | 1100 or more |
+
+</div>
 
 ## 02. Motor & Drive
 
