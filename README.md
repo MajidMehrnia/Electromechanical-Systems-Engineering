@@ -85,7 +85,45 @@ The original vehicle-level architecture provides the foundation for investigatin
 
 This section outlines the AI/ML surrogate modeling framework developed using **Artificial Neural Networks (ANN)** to predict total system electromechanical performance. Trained on multi-physics datasets spanning varied electric motor specifications, gear ratios, and driveline parameters, the model rapidly estimates system-level thermal behavior. This data-driven approach replaces computationally expensive finite-element and lump-parameter dynamic simulations with high-speed predictive modeling. The ANN framework enables real-time optimization and rapid design-space exploration across diverse powertrain configurations and operating profiles.
 <br><br>
-### Overall Software Architecture
+The proposed software enables a new generation of AI-assisted system design by integrating electro-mechanical based simulations with Artificial Neural Network (ANN) optimization. It significantly reduces development time while maintaining engineering credibility, making it well-suited for OEM-level decision support in electromechanical system development.
+
+<br>
+
+### 1. Project Overview
+
+| Title | AI-Integrated System Design & Optimization Platform |
+| :--- | :--- |
+| **Application** | Electric Motors & Mechatronic Systems with Cooling Loops |
+| **Target Users** | OEMs, Tier-1 Suppliers |
+| **Development Stage** | Concept / Pre-Development |
+| **Core Innovation** | Thermodynamics-based simulation integrated with ANN |
+| **Primary Goal** | Automate and accelerate thermal system concept design for heat pumps |
+| **Key Function** | Translate OEM requirements into optimized system architectures |
+| **Scope** | Concept design, architecture selection, parameter sizing, performance estimation |
+| **Value Creation** | Faster decision-making, reduced development cost, improved energy efficiency |
+
+---
+
+### 2. Objective of the Software
+
+* Accelerate early-stage electromechanical and electro-thermal system architectural design.
+* Bridge high-fidelity physical simulations with ultra-fast AI-driven surrogate models.
+* Provide automated optimization and OEM-focused quantitative trade-off analysis.
+
+---
+
+### 3. Software Workflow
+
+1. **Step 1:** OEM inputs entered through graphical interface (Sec. 5)
+2. **Step 2:** Initial architecture and parameters generated
+3. **Step 3:** AI predicts system performance (COP, heating/cooling capacity, power consumption)
+4. **Step 4:** Optimization algorithm refines design
+5. **Step 5:** Final concept validated using Simulink
+6. **Step 6:** Results summarized for OEM decision-making
+
+---
+
+### 4. Overall Software Architecture
 
 | Layer | Function | Key Technologies |
 | :--- | :--- | :--- |
@@ -95,8 +133,9 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 | **Optimization Layer** | Automated design space exploration | GA / Bayesian |
 | **Decision Output** | OEM-friendly results and recommendations | Plots, tables, reports |
 
-<br><br>
-### OEM Input Parameters
+---
+
+### 5. OEM Input Parameters
 
 | Category | Input Parameters |
 | :--- | :--- |
@@ -105,6 +144,40 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 | **Thermal Requirements** | Cabin heating & cooling demand, battery heating requirement |
 | **System Constraints** | Packaging limits, cost sensitivity, energy consumption targets |
 | **Regulatory** | Refrigerant type, safety and compliance constraints |
+
+---
+
+### 6. Thermodynamics-Based Simulation Core
+
+| Feature | Description |
+| :--- | :--- |
+| **Modeling Approach** | 1D thermodynamic and thermal-fluid modeling |
+| **Main Subsystems** | Refrigerant loop, coolant loops, cabin & battery interfaces |
+| **Role in Software** | Ground-truth data generation and final validation |
+| **Execution Mode** | Offline batch simulation and on-demand validation |
+
+---
+
+### 7. ANN-Based AI Engine (Surrogate Modeling)
+
+| Item | Description |
+| :--- | :--- |
+| **ANN Purpose** | Replace repeated heavy simulations during optimization |
+| **ANN Inputs** | Ambient temperature, compressor size, flow rates, architecture type |
+| **ANN Outputs** | COP, heating/cooling capacity, power consumption |
+| **Benefit** | Real-time performance prediction |
+| **Accuracy Role** | High correlation with physics-based simulation results |
+
+---
+
+### 8. Development Roadmap
+
+| Phase | Duration | Deliverables |
+| :--- | :--- | :--- |
+| **Phase 1** | 6 months | Parametric Simulink model |
+| **Phase 2** | 3 months | AI training & validation |
+| **Phase 3** | 3 months | GUI and optimization integration |
+| **Phase 4** | 2 months | OEM demo and reporting automation |
 
 <br><br>
 Here we can just publish, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related AI/ML developments are available in my companion repository:
