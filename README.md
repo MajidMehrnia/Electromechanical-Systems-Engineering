@@ -106,8 +106,11 @@ This Simscape Data Inspector plot illustrates the transient current waveform ($i
 
 <img width="1918" height="793" alt="9-6" src="https://github.com/user-attachments/assets/8eaf0f07-25ab-4d4c-a1bc-33c3a1c1ec37" />
 
-  
+
+This Simscape scope plot highlights the thermal transient responses of the powertrain components, plotting temperature (°C) against time (s) across driving cycles. The electric motor operates between 40°C and 50°C, reflecting rapid heating and cooling phases during high-load traction and regenerative cycles. The battery temperature maintains a stabilized thermal envelope between 29°C and 36°C, demonstrating effective multi-loop active cooling. The DC-DC converter exhibits sharper dynamic fluctuations from 13°C up to 34°C, directly driven by low-voltage auxiliary power demands and intermittent cycling.
+
 <strong style="color:red;">Simulation Results from Simscape Logging</strong>
+
 
 <img width="975" height="492" alt="T_vs_t_Motor_Battery" src="https://github.com/user-attachments/assets/f6526b99-67fe-4be3-97a3-2bf96466c894" />
 
