@@ -1,4 +1,4 @@
-
+<img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/67ed03b0-ac61-4039-a52f-1971b0a082c6" />
 # Motion Control & Electromechanical Systems Engineering
 
 ## Description
@@ -26,9 +26,18 @@ The figure below illustrates the virtual vehicle developed using Simulink and it
 ## 02. Motor Model
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
-<img width="667" height="355" alt="image" src="https://github.com/user-attachments/assets/f3edb1b4-2ced-4a80-a54c-bf2737af476e" />
+<img width="1915" height="1009" alt="9-1" src="https://github.com/user-attachments/assets/d6148666-3abd-47bb-82a7-26651afe2487" />
+
+<img width="822" height="718" alt="9-3" src="https://github.com/user-attachments/assets/4258bbc4-0878-4c89-b5d2-305b62115a73" />
+
 
 ## 03. Drive & Power Electronics
+
+<img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
+
+
+<img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/4f8dac9c-34e5-44fd-b418-bc41db60292b" />
+
 
 ## 07. ECAD & MCAD Interfaces
 
