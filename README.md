@@ -101,8 +101,8 @@ Detailed technical information on this AI/ML framework is provided in the follow
 | **Application** | Electric Motors & Mechatronic Systems with Cooling Loops |
 | **Target Users** | OEMs, Tier-1 Suppliers |
 | **Development Stage** | Concept / Pre-Development |
-| **Core Innovation** | Thermodynamics-based simulation integrated with ANN |
-| **Primary Goal** | Automate and accelerate thermal system concept design for heat pumps |
+| **Core Innovation** | Electro-Thermal-based simulation integrated with ANN |
+| **Primary Goal** | Automate and accelerate system concept design for EVs |
 | **Key Function** | Translate OEM requirements into optimized system architectures |
 | **Scope** | Concept design, architecture selection, parameter sizing, performance estimation |
 | **Value Creation** | Faster decision-making, reduced development cost, improved energy efficiency |
