@@ -32,12 +32,24 @@ The figure below shows the complete electromechanical system architecture co-sim
 
 | Parameter | Specification |
 | :--- | :--- |
-| **Voltage range HV / LV [VDC]** | 800 / 24V |
-| **Operating temperature range [°C]** | -20 / +55°C |
-| **Cooling capacity (W/O PTC)** | 8,5 kW |
-| **Heating capacity (W/O PTC) [kW]** | 9 kW |
-| **Heating capacity (W PTC) [kW]** | 10 - 20 kW |
-| **Cooling flow rate [l/h]** | 1100 or more |
+| **--- EV Powertrain & Drive Specifications ---** | |
+| **Target Application** | Passenger Electric Vehicle (EV Sedan) |
+| **E-Motor Max Continuous Power** | 100 kW |
+| **E-Motor Max Continuous Torque** | 200 N·m |
+| **Rotor Inertia** | $5 \times 10^{-6} \text{ kg}\cdot\text{m}^2$ |
+| **Torque Control Response ($T_c$)** | 2 ms |
+| **--- Inverter & Electrical Architecture ---** | |
+| **High Voltage (HV) DC-Link** | 800 VDC Nominal |
+| **Low Voltage (LV) Board Net** | 24 VDC |
+| **Inverter Control Strategy** | Field-Oriented Control (FOC) / Vector Control |
+| **Power Electronics Topology** | 3-Phase SiC Inverter |
+| **--- Battery & Drive Thermal Management (BTMS) ---** | |
+| **Refrigerant Type** | R1234yf |
+| **Operating Temperature Range** | -20°C to +55°C |
+| **Cooling Capacity (W/O PTC)** | 8.5 kW |
+| **Heating Capacity (W/O PTC)** | 9 kW |
+| **Auxiliary Heating Capacity (W PTC)** | 10 - 20 kW |
+| **Coolant Flow Rate** | $\ge 1100 \text{ l/h}$ |
 
 </div>
 
