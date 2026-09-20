@@ -54,8 +54,8 @@ The control architecture is designed in **Simulink** to enable precise motor con
 <br><br>
 <img width="1918" height="795" alt="9-5" src="https://github.com/user-attachments/assets/9f4ab89b-5ed5-444d-8c9b-95f26ebda8a4" />
 <br><br>
-## 05. Electro-Thermal Co-Simulation
 
+## 05. Electro-Thermal Co-Simulation
 This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the refrigerant compressor loop co-simulated directly with Simulink. The circuit models two-phase refrigerant flow through inlet and outlet piping (`PipeRound`) connected between environmental boundary conditions and the compressor unit. Rotational speed commands and boundary states are dynamically exchanged with the Simulink control model via dedicated co-simulation interface ports. A specialized initialization block (`RefrigCircInit`) establishes state convergence for the refrigerant loop to ensure stable transient simulation during vehicle operational cycles.
 <br><br>
 <img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
