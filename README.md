@@ -21,12 +21,9 @@ This repository supports a new product development (NPD) program and focuses on 
 ## 01. System Architecture
 
 The figure below shows the complete electromechanical system architecture co-simulated using Simulink, Simscape, and GT-SUITE. Blue signal and physical lines represent the thermodynamic and fluid networks, including refrigerant loops, coolant channels, the chiller, radiator, and evaporator circuits. Brown lines denote the electrical power distribution and control interconnections between the high-voltage battery, DC-DC converter, charger, PTC heater, and electric motor drive. This integrated Simscape environment enables precise multi-physics dynamic simulation to evaluate transient thermal responses and energy efficiency across demanding vehicle drive cycles.
-
-
+<br><br>
 <img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
-
-
-
+<br><br>
 ## 02. Motor & Drive
 
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
