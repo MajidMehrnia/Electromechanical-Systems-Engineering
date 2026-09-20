@@ -25,6 +25,17 @@ The figure below shows the complete electromechanical system architecture co-sim
 <img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
 <br><br>
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/08c991d2-481e-4477-9fc6-348f638395f1" />
+<h1 align="center">Thermal Management System</h1>
+<br>
+| Parameter | Specification |
+| :--- | :--- |
+| **Refrigerant type** | R1234yf |
+| **Voltage range HV / LV [VDC]** | 800 / 24V |
+| **Operating temperature range [°C]** | -20 / +55°C |
+| **Cooling capacity (W/O PTC)** | 8,5 kW |
+| **Heating capacity (W/O PTC) [kW]** | 9 kW |
+| **Heating capacity (W PTC) [kW]** | 10 - 20 kW |
+| **Cooling flow rate [l/h]** | 1100 or more |
 <br>
 ## 02. Motor & Drive
 
