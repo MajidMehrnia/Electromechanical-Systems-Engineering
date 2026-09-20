@@ -7,34 +7,34 @@ This repository supports a new product development (NPD) program and focuses on 
 ## Project Structure
 
 1. [System Architecture](#01-system-architecture)
-2. [Motor Model](#02-motor-model)
+2. [Motor & Drive](#02-motor-&-drive)
 3. [Drive & Power Electronics](#03-drive--power-electronics)
 4. [Gearbox & Mechanical Load](#04-gearbox--mechanical-load)
 5. [Motion Control](#05-motion-control)
 6. [Electro-Thermal Co-Simulation](#06-electro-thermal-co-simulation)
 7. [ECAD & MCAD Interfaces](#07-ecad--mcad-interfaces)
 8. [Embedded Control](#08-embedded-control)
-9. [AI/ML](#09-AI/ML)
+9. [AI/ML](#09-ai/ml)
 10. [Results](#10-results)
 
 
 ## 01. System Architecture
 
-The figure below illustrates the virtual vehicle developed using Simulink and its add-on products.  
+The figure below illustrates the system developed using Simulink and its add-on products.  
 <img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
 
-## 02. Motor Model
+## 02. Motor & Drive 
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
 <img width="1915" height="1009" alt="9-1" src="https://github.com/user-attachments/assets/d6148666-3abd-47bb-82a7-26651afe2487" />
 
 <img width="822" height="718" alt="9-3" src="https://github.com/user-attachments/assets/4258bbc4-0878-4c89-b5d2-305b62115a73" />
 
+<img width="823" height="712" alt="9-4" src="https://github.com/user-attachments/assets/d9590dcb-8e78-456d-b23c-bf49c38252fe" />
 
 ## 03. Drive & Power Electronics
 
 <img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
-
 
 <img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/4f8dac9c-34e5-44fd-b418-bc41db60292b" />
 
