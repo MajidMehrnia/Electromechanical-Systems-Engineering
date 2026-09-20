@@ -30,26 +30,88 @@ The figure below shows the complete electromechanical system architecture co-sim
 
 <div align="center">
 
-| Parameter | Specification |
-| :--- | :--- |
-| **--- EV Powertrain & Drive Specifications ---** | |
-| **Target Application** | Passenger Electric Vehicle (EV Sedan) |
-| **E-Motor Max Continuous Power** | 100 kW |
-| **E-Motor Max Continuous Torque** | 200 N·m |
-| **Rotor Inertia** | $5 \times 10^{-6} \text{ kg}\cdot\text{m}^2$ |
-| **Torque Control Response ($T_c$)** | 2 ms |
-| **--- Inverter & Electrical Architecture ---** | |
-| **High Voltage (HV) DC-Link** | 800 VDC Nominal |
-| **Low Voltage (LV) Board Net** | 24 VDC |
-| **Inverter Control Strategy** | Field-Oriented Control (FOC) / Vector Control |
-| **Power Electronics Topology** | 3-Phase SiC Inverter |
-| **--- Battery & Drive Thermal Management (BTMS) ---** | |
-| **Refrigerant Type** | R1234yf |
-| **Operating Temperature Range** | -20°C to +55°C |
-| **Cooling Capacity (W/O PTC)** | 8.5 kW |
-| **Heating Capacity (W/O PTC)** | 9 kW |
-| **Auxiliary Heating Capacity (W PTC)** | 10 - 20 kW |
-| **Coolant Flow Rate** | $\ge 1100 \text{ l/h}$ |
+<table>
+  <thead>
+    <tr>
+      <th align="left">Parameter</th>
+      <th align="left">Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Header 1 -->
+    <tr>
+      <td colspan="2" align="center"><b>EV Powertrain & Drive Specifications</b></td>
+    </tr>
+    <tr>
+      <td><b>Target Application</b></td>
+      <td>Passenger Electric Vehicle (EV Sedan)</td>
+    </tr>
+    <tr>
+      <td><b>E-Motor Max Continuous Power</b></td>
+      <td>100 kW</td>
+    </tr>
+    <tr>
+      <td><b>E-Motor Max Continuous Torque</b></td>
+      <td>200 N·m</td>
+    </tr>
+    <tr>
+      <td><b>Rotor Inertia</b></td>
+      <td>5 × 10<sup>-6</sup> kg·m²</td>
+    </tr>
+    <tr>
+      <td><b>Torque Control Response (T<sub>c</sub>)</b></td>
+      <td>2 ms</td>
+    </tr>
+    <!-- Header 2 -->
+    <tr>
+      <td colspan="2" align="center"><b>Inverter & Electrical Architecture</b></td>
+    </tr>
+    <tr>
+      <td><b>High Voltage (HV) DC-Link</b></td>
+      <td>800 VDC Nominal</td>
+    </tr>
+    <tr>
+      <td><b>Low Voltage (LV) Board Net</b></td>
+      <td>24 VDC</td>
+    </tr>
+    <tr>
+      <td><b>Inverter Control Strategy</b></td>
+      <td>Field-Oriented Control (FOC) / Vector Control</td>
+    </tr>
+    <tr>
+      <td><b>Power Electronics Topology</b></td>
+      <td>3-Phase SiC Inverter</td>
+    </tr>
+    <!-- Header 3 -->
+    <tr>
+      <td colspan="2" align="center"><b>Battery & Drive Thermal Management (BTMS)</b></td>
+    </tr>
+    <tr>
+      <td><b>Refrigerant Type</b></td>
+      <td>R1234yf</td>
+    </tr>
+    <tr>
+      <td><b>Operating Temperature Range</b></td>
+      <td>-20°C to +55°C</td>
+    </tr>
+    <tr>
+      <td><b>Cooling Capacity (W/O PTC)</b></td>
+      <td>8.5 kW</td>
+    </tr>
+    <tr>
+      <td><b>Heating Capacity (W/O PTC)</b></td>
+      <td>9 kW</td>
+    </tr>
+    <tr>
+      <td><b>Auxiliary Heating Capacity (W PTC)</b></td>
+      <td>10 - 20 kW</td>
+    </tr>
+    <tr>
+      <td><b>Coolant Flow Rate</b></td>
+      <td>≥ 1100 l/h</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
