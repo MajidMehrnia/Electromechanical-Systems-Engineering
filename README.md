@@ -86,10 +86,11 @@ The original vehicle-level architecture provides the foundation for investigatin
 This section outlines the AI/ML surrogate modeling framework developed using **Artificial Neural Networks (ANN)** to predict total system electromechanical performance. Trained on multi-physics datasets spanning varied electric motor specifications, gear ratios, and driveline parameters, the model rapidly estimates system-level thermal behavior. This data-driven approach replaces computationally expensive finite-element and lump-parameter dynamic simulations with high-speed predictive modeling. The ANN framework enables real-time optimization and rapid design-space exploration across diverse powertrain configurations and operating profiles.
 <br><br>
 The proposed software enables a new generation of AI-assisted system design by integrating electro-mechanical based simulations with Artificial Neural Network (ANN) optimization. It significantly reduces development time while maintaining engineering credibility, making it well-suited for OEM-level decision support in electromechanical system development.
-
 <br>
 
-### 1. Project Overview
+**AI-Integrated System Design & Optimization Software**
+
+### 7.1. Overview
 
 | Title | AI-Integrated System Design & Optimization Platform |
 | :--- | :--- |
@@ -104,7 +105,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 2. Objective of the Software
+### 7.2. Objective of the Software
 
 * Accelerate early-stage electromechanical and electro-thermal system architectural design.
 * Bridge high-fidelity physical simulations with ultra-fast AI-driven surrogate models.
@@ -112,7 +113,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 3. Software Workflow
+### 7.3. Software Workflow
 
 1. **Step 1:** OEM inputs entered through graphical interface (Sec. 5)
 2. **Step 2:** Initial architecture and parameters generated
@@ -123,7 +124,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 4. Overall Software Architecture
+### 7.4. Overall Software Architecture
 
 | Layer | Function | Key Technologies |
 | :--- | :--- | :--- |
@@ -135,7 +136,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 5. OEM Input Parameters
+### 7.5. OEM Input Parameters
 
 | Category | Input Parameters |
 | :--- | :--- |
@@ -147,7 +148,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 6. Thermodynamics-Based Simulation Core
+### 7.6. Thermodynamics-Based Simulation Core
 
 | Feature | Description |
 | :--- | :--- |
@@ -158,7 +159,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 7. ANN-Based AI Engine (Surrogate Modeling)
+### 7.7. ANN-Based AI Engine (Surrogate Modeling)
 
 | Item | Description |
 | :--- | :--- |
@@ -170,7 +171,7 @@ The proposed software enables a new generation of AI-assisted system design by i
 
 ---
 
-### 8. Development Roadmap
+### 7.8. Development Roadmap
 
 | Phase | Duration | Deliverables |
 | :--- | :--- | :--- |
