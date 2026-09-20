@@ -12,7 +12,8 @@ This repository supports a new product development (NPD) program and focuses on 
 5. [Electro-Thermal Co-Simulation](#05-electro-thermal-co-simulation)
 6. [ECAD & MCAD Interfaces](#06-ecad--mcad-interfaces)
 7. [AI/ML Modeling](#07-aiml-modeling)
-8. [Results](#08-results)
+8. [NPI Flowchart](#08-npi-flowchart)
+9. [Results](#09-results)
 
    
 ## 01. System Architecture
@@ -96,7 +97,15 @@ The original vehicle-level architecture provides the foundation for investigatin
 To enhance model fidelity and accelerate the design process, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related CFD and AI/ML developments are available in my companion repository: 
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
-## 08. Results
+
+## 08. NPI Flowchart
+
+<p align="center">
+ <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
+</p>
+
+
+## 09. Results
 
 The complete executable models and the underlying management tool is available below:
 
@@ -122,11 +131,7 @@ The main thermodynamic output of the calculations is the **P–h diagram** of th
 <p align="center">
 <img width="731" height="523" alt="530534618-effea2f7-4077-4bf4-82ef-bf2cce446ec7" src="https://github.com/user-attachments/assets/822cede5-fdb1-4b8e-8a0d-c17b794ed56b" />
 
-## NPI Flowchart
 
-<p align="center">
- <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
-</p>
 
 ## Support
 For any questions regarding the model place a comment in the repository.
