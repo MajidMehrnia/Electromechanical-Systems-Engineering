@@ -80,6 +80,30 @@ The figure below shows the complete electromechanical system architecture co-sim
     </tr>
     <!-- Header 3 -->
     <tr>
+      <td colspan="2" align="center"><b>Gearbox & Vehicle Load Model</b></td>
+    </tr>
+    <tr>
+      <td><b>Transmission Type</b></td>
+      <td>Single-Speed Reduction Gearbox</td>
+    </tr>
+    <tr>
+      <td><b>Gear Ratio (i)</b></td>
+      <td>9.5 : 1</td>
+    </tr>
+    <tr>
+      <td><b>Transmission Efficiency (η)</b></td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <td><b>Max Wheel Torque</b></td>
+      <td>1900 N·m</td>
+    </tr>
+    <tr>
+      <td><b>Vehicle Dynamics Model</b></td>
+      <td>Longitudinal Load Dynamics (Aero Drag + Rolling Resistance)</td>
+    </tr>
+    <!-- Header 4 -->
+    <tr>
       <td colspan="2" align="center"><b>Battery & Drive Thermal Management (BTMS)</b></td>
     </tr>
     <tr>
