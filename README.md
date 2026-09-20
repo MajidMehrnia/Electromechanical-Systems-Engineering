@@ -1,4 +1,3 @@
-<img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/67ed03b0-ac61-4039-a52f-1971b0a082c6" />
 # Motion Control & Electromechanical Systems Engineering
 
 ## Description
@@ -7,23 +6,21 @@ This repository supports a new product development (NPD) program and focuses on 
 ## Project Structure
 
 1. [System Architecture](#01-system-architecture)
-2. [Motor & Drive](#02-motor-&-drive)
-3. [Drive & Power Electronics](#03-drive--power-electronics)
-4. [Gearbox & Mechanical Load](#04-gearbox--mechanical-load)
-5. [Motion Control](#05-motion-control)
-6. [Electro-Thermal Co-Simulation](#06-electro-thermal-co-simulation)
-7. [ECAD & MCAD Interfaces](#07-ecad--mcad-interfaces)
-8. [Embedded Control](#08-embedded-control)
-9. [AI/ML](#09-ai/ml)
-10. [Results](#10-results)
+2. [Motor & Drive](#02-motor--drive)
+3. [Gearbox & Mechanical Load](#03-gearbox--mechanical-load)
+4. [Motion & Embedded Control](#04-motion--embedded-control)
+5. [Electro-Thermal Co-Simulation](#05-electro-thermal-co-simulation)
+6. [ECAD & MCAD Interfaces](#06-ecad--mcad-interfaces)
+7. [AI/ML Modeling](#07-aiml-modeling)
+8. [Results](#08-results)
 
-
+   
 ## 01. System Architecture
 
 The figure below illustrates the system developed using Simulink and its add-on products.  
 <img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
 
-## 02. Motor & Drive 
+## 02. Motor & Drive
 The electric motor is driven by the power drive electronics and is mechanically connected to the actuator drive system. The simulation framework can be easily extended to describe alternative motion control architectures (e.g., direct-drive or multi-axis linear setups). The motor’s dynamic characteristics and electrical losses are modeled using efficiency maps, with transient temperatures determined by internal losses and thermal mass. To deliver the required torque and force, the motor is coupled with a precision gearbox operating at a constant transmission ratio, with mechanical losses modeled using a constant efficiency.
 
 <img width="1915" height="1009" alt="9-1" src="https://github.com/user-attachments/assets/d6148666-3abd-47bb-82a7-26651afe2487" />
@@ -32,14 +29,21 @@ The electric motor is driven by the power drive electronics and is mechanically 
 
 <img width="823" height="712" alt="9-4" src="https://github.com/user-attachments/assets/d9590dcb-8e78-456d-b23c-bf49c38252fe" />
 
-## 03. Drive & Power Electronics
+## 03. Gearbox & Mechanical Load
 
 <img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
 
 <img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/4f8dac9c-34e5-44fd-b418-bc41db60292b" />
 
 
-## 07. ECAD & MCAD Interfaces
+## 04. Motion & Embedded Control
+
+<img width="1918" height="795" alt="9-5" src="https://github.com/user-attachments/assets/9f4ab89b-5ed5-444d-8c9b-95f26ebda8a4" />
+
+## 05. Electro-Thermal Co-Simulation
+
+
+## 06. ECAD & MCAD Interfaces
 
 <p align="center">
  <b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
@@ -59,12 +63,12 @@ This repository presents a model-based engineering study of an integrated electr
 
 The original vehicle-level architecture provides the foundation for investigating the interaction between electrical, mechanical, control and thermal domains. The focus of this repository is the engineering optimization of electromechanical motion systems and their interfaces, rather than the development of a complete vehicle model. The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 
-## 9. AI/ML
+## 07. AI/ML Modeling
 
 To enhance model fidelity and accelerate the design process, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related CFD and AI/ML developments are available in my companion repository: 
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
-## 10. Results
+## 08. Results
 
 The complete executable models and the underlying management tool is available below:
 
