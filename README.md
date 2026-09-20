@@ -99,6 +99,28 @@ The original vehicle-level architecture provides the foundation for investigatin
 
 This section outlines the AI/ML surrogate modeling framework developed using **Artificial Neural Networks (ANN)** to predict total system electromechanical performance. Trained on multi-physics datasets spanning varied electric motor specifications, gear ratios, and driveline parameters, the model rapidly estimates system-level thermal behavior. This data-driven approach replaces computationally expensive finite-element and lump-parameter dynamic simulations with high-speed predictive modeling. The ANN framework enables real-time optimization and rapid design-space exploration across diverse powertrain configurations and operating profiles.
 
+### Overall Software Architecture
+
+| Layer | Function | Key Technologies |
+| :--- | :--- | :--- |
+| **OEM Input Interface** | Capture vehicle and thermal requirements | GUI (MATLAB App Designer) |
+| **Simulation** | High-fidelity thermal behavior modeling | Simulink / GT-SUITE / CFD |
+| **AI / ANN Engine** | Fast surrogate modeling of system performance | ANN (Deep Learning) |
+| **Optimization Layer** | Automated design space exploration | GA / Bayesian |
+| **Decision Output** | OEM-friendly results and recommendations | Plots, tables, reports |
+
+---
+
+### OEM Input Parameters
+
+| Category | Input Parameters |
+| :--- | :--- |
+| **Vehicle Data** | Vehicle segment, BEV architecture, voltage level |
+| **Environmental Conditions** | Ambient temperature range, humidity, altitude |
+| **Thermal Requirements** | Cabin heating & cooling demand, battery heating requirement |
+| **System Constraints** | Packaging limits, cost sensitivity, energy consumption targets |
+| **Regulatory** | Refrigerant type, safety and compliance constraints |
+
 Here we can just publish, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related AI/ML developments are available in my companion repository:
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
