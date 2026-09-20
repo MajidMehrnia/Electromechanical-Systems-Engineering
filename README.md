@@ -40,11 +40,7 @@ The figure below shows the complete electromechanical system architecture co-sim
   <tbody>
     <!-- Header 1 -->
     <tr>
-      <td colspan="2" align="center"><b>EV Powertrain & Drive Specifications</b></td>
-    </tr>
-    <tr>
-      <td><b>Target Application</b></td>
-      <td>Passenger Electric Vehicle (EV Sedan)</td>
+      <td colspan="2" align="center"><b>Motor & Drive Specifications</b></td>
     </tr>
     <tr>
       <td><b>E-Motor Max Continuous Power</b></td>
