@@ -42,9 +42,14 @@ This Simscape Electrical motor and drive block is parameterized at the system le
 
 ## 03. Gearbox & Mechanical Load
 
-<img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
+This Simscape Driveline Simple Gear block parameterizes the mechanical reduction ratio between the electric motor and the driven axle. The transmission is configured with a continuous reduction gear ratio of $N_F/N_B = 9$ and same-direction output shaft rotation to amplify motor torque delivered to the driveline. Mechanical meshing losses are modeled using a constant efficiency formulation fixed at $97\%$ ($\eta = 0.97$) with a follower power threshold of $0.001\text{ W}$. This high-efficiency mechanical reduction unit enables accurate power transfer calculation and dynamic driveline load evaluation across vehicle operating cycles.
 
 <img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/4f8dac9c-34e5-44fd-b418-bc41db60292b" />
+
+
+
+<img width="1321" height="766" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
+
 
 
 ## 04. Motion & Embedded Control
