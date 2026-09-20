@@ -94,6 +94,7 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 | **AI / ANN Engine** | Fast surrogate modeling of system performance | ANN (Deep Learning) |
 | **Optimization Layer** | Automated design space exploration | GA / Bayesian |
 | **Decision Output** | OEM-friendly results and recommendations | Plots, tables, reports |
+
 <br><br>
 ### OEM Input Parameters
 
@@ -106,7 +107,6 @@ This section outlines the AI/ML surrogate modeling framework developed using **A
 | **Regulatory** | Refrigerant type, safety and compliance constraints |
 
 <br><br>
-
 Here we can just publish, a novel **ML**-based thermodynamic modeling approach has been developed and validated against **CFD** simulations. Related AI/ML developments are available in my companion repository:
 [Physics-Informed AI/ML Modeling](https://github.com/MajidMehrnia/Physics-Informed-AI-ML-for-Thermodynamic-Modeling)
 
