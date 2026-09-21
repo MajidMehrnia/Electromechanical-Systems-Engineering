@@ -665,7 +665,7 @@ The software is designed to:
 
 ---
 
-## **7.8. AI Output Evaluation & Engineering Validation**
+## 7.8 AI Output Evaluation and Engineering Validation
 
 A central principle of the software is that **AI-generated outputs are treated as engineering decision-support information and must be critically evaluated before use.**
 
@@ -706,7 +706,7 @@ A central principle of the software is that **AI-generated outputs are treated a
 
 ---
 
-## **7.9. Optimization & AI-Enabled Engineering Value**
+## 7.9 Optimization and AI-Enabled Engineering Value
 
 <table>
 <tr bgcolor="#1F4E78">
