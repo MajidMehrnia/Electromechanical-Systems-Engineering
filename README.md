@@ -5,7 +5,7 @@ This repository supports a New Product Development (NPD/NPI) program focused on 
 
 The project evaluates key engineering performance metrics for **high-torque-density electric motors** and **power-electronics thermal management** under real-world drive cycles and heavy-duty transient operating conditions for an electric vehicle (EV) sedan. The novelty lies in the **integrated co-simulation of electrical and control loops with mechanical system dynamics**, enabling system-level analysis of coupled electromechanical interactions. 
 
-One of the key objectives of this development is to develop an **[AI-Enabled Electromechanical System Design & Optimization Platform](#71-overview)** for the design and optimization of EV systems across a wide range of motor, drive and power-capacity configurations.
+One of the key objectives of this development is to develop an **[AI-Enabled Engineering Value & Optimization Platform](#ai-enabled-engineering-value--optimization-platform)** for the design and optimization of EV systems across a wide range of motor, drive and power-capacity configurations.
 
 ## Project Structure
 
@@ -204,7 +204,7 @@ Here we can just publish, a novel ML-based thermodynamic modeling approach has b
 Detailed technical information on this AI/ML framework is provided in the following sub-sections.
 
 
-# AI-Enabled Electromechanical System Design & Optimization Platform
+# AI-Enabled Engineering Value & Optimization Platform
 
 **Physics-Based Simulation, ANN Surrogate Modeling & Engineering Decision Support**
 
