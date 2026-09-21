@@ -232,7 +232,7 @@ Detailed technical information on this AI/ML framework is provided in the follow
 ---
 
 
-## **7.1. Overview**
+## 7.1 Overview
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -279,7 +279,7 @@ Detailed technical information on this AI/ML framework is provided in the follow
 
 ---
 
-## **7.2. Objective of the Software**
+## 7.2 Objective of the Software
 
 The objective is to integrate **physics-based engineering simulation, AI surrogate modeling and optimization** into a decision-support platform for early-stage system development.
 
@@ -298,7 +298,7 @@ The software is designed to:
 
 ---
 
-## **7.3. Software Workflow**
+## 7.3 Software Workflow
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -341,7 +341,7 @@ The software is designed to:
 
 ---
 
-## **7.4. Overall Software Architecture**
+## 7.4 Overall Software Architecture
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -383,9 +383,9 @@ The software is designed to:
 
 ---
 
-## **7.5. OEM & Engineering Input Parameters**
+## 7.5 OEM & Engineering Input Parameters
 
-### **Vehicle & System Requirements**
+### Vehicle & System Requirements
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -426,7 +426,7 @@ The software is designed to:
 </tr>
 </table>
 
-### **Electric Motor Specifications**
+### Electric Motor Specifications
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -511,7 +511,7 @@ The software is designed to:
 </tr>
 </table>
 
-### **Power Electronics & Drive Parameters**
+### Power Electronics & Drive Parameters
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -552,7 +552,7 @@ The software is designed to:
 </tr>
 </table>
 
-### **Thermal Management Parameters**
+### Thermal Management Parameters
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -591,7 +591,7 @@ The software is designed to:
 
 ---
 
-## **7.6. Physics-Based Simulation Core**
+## 7.6 Physics-Based Simulation Core
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -626,7 +626,7 @@ The software is designed to:
 
 ---
 
-## **7.7. ANN-Based AI Engine — Surrogate Modeling**
+## 7.7 ANN-Based AI Engine — Surrogate Modeling
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -739,7 +739,7 @@ A central principle of the software is that **AI-generated outputs are treated a
 </tr>
 </table>
 
-### **Optimization Functions**
+### Optimization Functions
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -782,7 +782,7 @@ A central principle of the software is that **AI-generated outputs are treated a
 
 ---
 
-## **7.10. Development Roadmap**
+## 7.10 Development Roadmap
 
 <table>
 <tr bgcolor="#1F4E78">
