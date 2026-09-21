@@ -230,11 +230,11 @@ Detailed technical information on this AI/ML framework is provided in the follow
 </tr>
 <tr>
 <td><b>Core Innovation</b></td>
-<td>Electro-thermal simulation integrated with Artificial Neural Network (ANN) surrogate modeling</td>
+<td>Physics-based electro-thermal simulation integrated with Artificial Neural Network (ANN) surrogate modeling</td>
 </tr>
 <tr bgcolor="#F3F8FC">
 <td><b>Primary Goal</b></td>
-<td>Accelerate system concept design and engineering decision-making for electric mobility applications</td>
+<td>Accelerate system concept development and engineering decision-making for electric mobility applications</td>
 </tr>
 <tr>
 <td><b>Key Function</b></td>
@@ -246,7 +246,7 @@ Detailed technical information on this AI/ML framework is provided in the follow
 </tr>
 <tr>
 <td><b>Engineering Value</b></td>
-<td>Higher engineering productivity, faster decision-making, improved work quality and reduced development costs</td>
+<td>Higher engineering efficiency, stronger decision intelligence, improved engineering assurance, optimized cost position and development ROI</td>
 </tr>
 </table>
 
@@ -262,21 +262,12 @@ The software is designed to:
 * Bridge high-fidelity physics-based simulations with fast AI-driven surrogate models.
 * Reduce repetitive computational effort during design-space exploration.
 * Enable automated optimization of system architectures and engineering parameters.
-* Provide quantitative engineering trade-off analysis to support OEM and R&D decision-making.
-* Improve engineering productivity by reducing repetitive simulation and evaluation activities.
-* Improve work quality through structured validation, traceability and engineering constraints.
-* Reduce development and simulation costs by minimizing unnecessary high-fidelity iterations.
-* Apply AI selectively to engineering use cases where it provides measurable productivity, quality or cost benefits.
-* Critically evaluate AI-generated outputs before they are used for engineering decisions.
-
-### **AI Value Creation**
-
-| AI Application               | Engineering Value                                                                            |
-| ---------------------------- | -------------------------------------------------------------------------------------------- |
-| **Productivity Improvement** | Reduce repetitive simulation, parameter sweeps and manual design-space evaluation            |
-| **Decision-Making**          | Enable rapid quantitative comparison of architectures and design alternatives                |
-| **Work Quality**             | Improve consistency, traceability and validation of engineering evaluations                  |
-| **Cost Reduction**           | Reduce computational effort, engineering iteration time and unnecessary prototype evaluation |
+* Provide quantitative engineering trade-off analysis to support system-level decisions.
+* Increase engineering throughput by reducing repetitive simulation and evaluation activities.
+* Strengthen engineering assurance through structured validation and physics-based verification.
+* Improve cost position by reducing unnecessary computational, iteration and prototype effort.
+* Apply AI selectively to engineering use cases where it provides measurable technical or economic value.
+* Critically evaluate AI-generated outputs before they are used to support engineering decisions.
 
 ---
 
@@ -688,12 +679,45 @@ A central principle of the software is that **AI-generated outputs are treated a
 
 ---
 
-## **7.9. Optimization & Engineering Decision Support**
+## **7.9. Optimization & AI-Enabled Engineering Value**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Engineering Value</font></th>
+<th><font color="white">AI Contribution</font></th>
+</tr>
+<tr>
+<td><b>Decision Intelligence</b></td>
+<td>Enable rapid quantitative comparison of system architectures, design alternatives and engineering trade-offs</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Engineering Efficiency</b></td>
+<td>Reduce repetitive simulation, parameter sweeps and manual design-space evaluation</td>
+</tr>
+<tr>
+<td><b>Engineering Assurance</b></td>
+<td>Improve consistency, traceability and validation of engineering evaluations through physics-based verification</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Value Engineering &amp; Cost Position</b></td>
+<td>Apply VAVE principles to optimize system architecture, engineering effort and prototype strategy while improving development cost position and potential ROI</td>
+</tr>
+<tr>
+<td><b>AI Use-Case Fit</b></td>
+<td>Identify engineering applications where surrogate modeling provides measurable value over repeated high-fidelity simulation</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>AI Output Assurance</b></td>
+<td>Critically evaluate AI predictions against physics-based models, engineering constraints, validation data and the defined model domain</td>
+</tr>
+</table>
+
+### **Optimization Functions**
 
 <table>
 <tr bgcolor="#1F4E78">
 <th><font color="white">Engineering Function</font></th>
-<th><font color="white">AI / Software Contribution</font></th>
+<th><font color="white">Application</font></th>
 </tr>
 <tr>
 <td><b>Architecture Exploration</b></td>
@@ -729,39 +753,6 @@ A central principle of the software is that **AI-generated outputs are treated a
 </tr>
 </table>
 
-### **AI-Driven Engineering Value**
-
-<table>
-<tr bgcolor="#1F4E78">
-<th><font color="white">AMETEK AI Requirement</font></th>
-<th><font color="white">Implementation in the Platform</font></th>
-</tr>
-<tr>
-<td><b>Improve Productivity</b></td>
-<td>Reduce repetitive high-fidelity simulations, manual parameter sweeps and engineering evaluation effort</td>
-</tr>
-<tr bgcolor="#F3F8FC">
-<td><b>Improve Decision-Making</b></td>
-<td>Provide rapid, quantitative comparison of architectures, parameters and system trade-offs</td>
-</tr>
-<tr>
-<td><b>Improve Work Quality</b></td>
-<td>Apply structured validation, physical plausibility checks, constraint verification and engineering review</td>
-</tr>
-<tr bgcolor="#F3F8FC">
-<td><b>Reduce Costs</b></td>
-<td>Reduce computational effort, engineering iteration time and unnecessary prototype or physical evaluation</td>
-</tr>
-<tr>
-<td><b>Identify AI Use Cases</b></td>
-<td>Apply AI where surrogate modeling provides measurable value over repeated high-fidelity simulation</td>
-</tr>
-<tr bgcolor="#F3F8FC">
-<td><b>Critically Evaluate AI Outputs</b></td>
-<td>Validate predictions against physics-based models, engineering constraints and the validated model domain</td>
-</tr>
-</table>
-
 ---
 
 ## **7.10. Development Roadmap**
@@ -794,13 +785,6 @@ A central principle of the software is that **AI-generated outputs are treated a
 </tr>
 </table>
 
----
-
-## **Engineering Principle**
-
-> **AI accelerates engineering decisions; physics-based models and engineering judgment remain the validation authority.**
-
-This approach positions AI as an **engineering productivity and decision-support capability**, rather than a replacement for physics-based engineering analysis or engineering judgment.
 
 
 
