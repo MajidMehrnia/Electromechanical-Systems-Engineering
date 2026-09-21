@@ -1,7 +1,11 @@
 # Electromechanical Systems Engineering
 
 ## Description
-This repository supported a new product development (NPD/NPI) program and focused on the design, modeling, dynamic simulation, and performance analysis of electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and thermal and electric loops. This project extracts and evaluates key engineering performance metrics relevant to high-torque-density electric motors, and power electronics thermal management under real-world drive cycles and heavy-duty transients for an Electric Vehicle (EV) sedan. The novelty lies in the integrated co-simulation of electrical and control loops with mechanical systems.
+This repository supports a **New Product Development (NPD/NPI)** program focused on the design, modeling, dynamic simulation, and performance analysis of **electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and coupled electrical and thermal systems**.
+
+The project evaluates key engineering performance metrics for **high-torque-density electric motors** and **power-electronics thermal management** under real-world drive cycles and heavy-duty transient operating conditions for an electric vehicle (EV) sedan.
+
+The novelty lies in the **integrated co-simulation of electrical and control loops with mechanical system dynamics**, enabling system-level analysis of coupled electromechanical interactions.
 
 One of the key objectives of this development is to develop an [**AI/ML-based engineering software framework**](#07-aiml-modeling) for the design and optimization of EV thermal systems across a wide range of motor, drive and power-capacity configurations.
 
