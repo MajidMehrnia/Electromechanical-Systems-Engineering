@@ -203,7 +203,7 @@ Here we can just publish, a novel ML-based thermodynamic modeling approach has b
 
 Detailed technical information on this AI/ML framework is provided in the following sub-sections.
 
-```markdown
+
 # AI-Enabled Electromechanical System Design & Optimization Platform
 
 **Physics-Based Simulation, ANN Surrogate Modeling & Engineering Decision Support**
