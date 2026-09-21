@@ -203,7 +203,34 @@ Here we can just publish, a novel ML-based thermodynamic modeling approach has b
 
 Detailed technical information on this AI/ML framework is provided in the following sub-sections.
 
-# **AI-Integrated System Design & Optimization Software**
+```markdown
+# AI-Enabled Electromechanical System Design & Optimization Platform
+
+**Physics-Based Simulation, ANN Surrogate Modeling & Engineering Decision Support**
+
+---
+
+## Table of Contents
+
+- [7.1 Overview](#71-overview)
+- [7.2 Objective of the Software](#72-objective-of-the-software)
+- [7.3 Software Workflow](#73-software-workflow)
+- [7.4 Overall Software Architecture](#74-overall-software-architecture)
+- [7.5 OEM and Engineering Input Parameters](#75-oem-and-engineering-input-parameters)
+  - [Vehicle and System Requirements](#vehicle-and-system-requirements)
+  - [Electric Motor Specifications](#electric-motor-specifications)
+  - [Power Electronics and Drive Parameters](#power-electronics-and-drive-parameters)
+  - [Thermal Management Parameters](#thermal-management-parameters)
+- [7.6 Physics-Based Simulation Core](#76-physics-based-simulation-core)
+- [7.7 ANN-Based AI Engine](#77-ann-based-ai-engine)
+- [7.8 AI Output Evaluation and Engineering Validation](#78-ai-output-evaluation-and-engineering-validation)
+- [7.9 Optimization and AI-Enabled Engineering Value](#79-optimization-and-ai-enabled-engineering-value)
+  - [Optimization Functions](#optimization-functions)
+- [7.10 Development Roadmap](#710-development-roadmap)
+
+
+---
+
 
 ## **7.1. Overview**
 
