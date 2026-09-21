@@ -203,97 +203,604 @@ Here we can just publish, a novel ML-based thermodynamic modeling approach has b
 
 Detailed technical information on this AI/ML framework is provided in the following sub-sections.
 
-**AI-Integrated System Design & Optimization Software:**
+# **AI-Integrated System Design & Optimization Software**
 
-### 7.1. Overview
+## **7.1. Overview**
 
-| Title | AI-Integrated System Design & Optimization Platform |
-| :--- | :--- |
-| **Application** | Electric Motors & Mechatronic Systems with Cooling Loops |
-| **Target Users** | OEMs, Tier-1 Suppliers |
-| **Development Stage** | Concept / Pre-Development |
-| **Core Innovation** | Electro-Thermal-based simulation integrated with ANN |
-| **Primary Goal** | Automate and accelerate system concept design for EVs |
-| **Key Function** | Translate OEM requirements into optimized system architectures |
-| **Scope** | Concept design, architecture selection, parameter sizing, performance estimation |
-| **Value Creation** | Faster decision-making, reduced development cost, improved energy efficiency |
-
----
-
-### 7.2. Objective of the Software
-
-* Accelerate early-stage electromechanical and electro-thermal system architectural design.
-* Bridge high-fidelity physical simulations with ultra-fast AI-driven surrogate models.
-* Provide automated optimization and OEM-focused quantitative trade-off analysis.
-
----
-
-### 7.3. Software Workflow
-
-1. **Step 1:** OEM inputs entered through graphical interface (Sec. 5)
-2. **Step 2:** Initial architecture and parameters generated
-3. **Step 3:** AI predicts system performance (COP, heating/cooling capacity, power consumption)
-4. **Step 4:** Optimization algorithm refines design
-5. **Step 5:** Final concept validated using Simulink
-6. **Step 6:** Results summarized for OEM decision-making
-
----
-
-### 7.4. Overall Software Architecture
-
-| Layer | Function | Key Technologies |
-| :--- | :--- | :--- |
-| **OEM Input Interface** | Capture vehicle and thermal requirements | GUI (MATLAB App Designer) |
-| **Simulation** | High-fidelity thermal behavior modeling | Simulink / GT-SUITE / CFD |
-| **AI / ANN Engine** | Fast surrogate modeling of system performance | ANN (Deep Learning) |
-| **Optimization Layer** | Automated design space exploration | GA / Bayesian |
-| **Decision Output** | OEM-friendly results and recommendations | Plots, tables, reports |
-
----
-
-### 7.5. OEM Input Parameters
-
-| Category | Input Parameters |
-| :--- | :--- |
-| **Vehicle Data** | Vehicle segment, BEV architecture, voltage level |
-| **Environmental Conditions** | Ambient temperature range, humidity, altitude |
-| **Thermal Requirements** | Cabin heating & cooling demand, battery heating requirement |
-| **System Constraints** | Packaging limits, cost sensitivity, energy consumption targets |
-| **Regulatory** | Refrigerant type, safety and compliance constraints |
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Category</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Title</b></td>
+<td>AI-Integrated System Design & Optimization Platform</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Application</b></td>
+<td>Electric Motors & Mechatronic Systems with Thermal Management</td>
+</tr>
+<tr>
+<td><b>Target Users</b></td>
+<td>OEMs, Tier-1 Suppliers, R&amp;D and Engineering Teams</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Development Stage</b></td>
+<td>Concept / Pre-Development</td>
+</tr>
+<tr>
+<td><b>Core Innovation</b></td>
+<td>Electro-thermal simulation integrated with Artificial Neural Network (ANN) surrogate modeling</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Primary Goal</b></td>
+<td>Accelerate system concept design and engineering decision-making for electric mobility applications</td>
+</tr>
+<tr>
+<td><b>Key Function</b></td>
+<td>Translate engineering requirements into optimized system architectures and design parameters</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Scope</b></td>
+<td>Concept design, architecture selection, parameter sizing, performance prediction and optimization</td>
+</tr>
+<tr>
+<td><b>Engineering Value</b></td>
+<td>Higher engineering productivity, faster decision-making, improved work quality and reduced development costs</td>
+</tr>
+</table>
 
 ---
 
-### 7.6. Thermodynamics-Based Simulation Core
+## **7.2. Objective of the Software**
 
-| Feature | Description |
-| :--- | :--- |
-| **Modeling Approach** | 1D thermodynamic and thermal-fluid modeling |
-| **Main Subsystems** | Refrigerant loop, coolant loops, cabin & battery interfaces |
-| **Role in Software** | Ground-truth data generation and final validation |
-| **Execution Mode** | Offline batch simulation and on-demand validation |
+The objective is to integrate **physics-based engineering simulation, AI surrogate modeling and optimization** into a decision-support platform for early-stage system development.
+
+The software is designed to:
+
+* Accelerate early-stage electromechanical and electro-thermal system architecture development.
+* Bridge high-fidelity physics-based simulations with fast AI-driven surrogate models.
+* Reduce repetitive computational effort during design-space exploration.
+* Enable automated optimization of system architectures and engineering parameters.
+* Provide quantitative engineering trade-off analysis to support OEM and R&D decision-making.
+* Improve engineering productivity by reducing repetitive simulation and evaluation activities.
+* Improve work quality through structured validation, traceability and engineering constraints.
+* Reduce development and simulation costs by minimizing unnecessary high-fidelity iterations.
+* Apply AI selectively to engineering use cases where it provides measurable productivity, quality or cost benefits.
+* Critically evaluate AI-generated outputs before they are used for engineering decisions.
+
+### **AI Value Creation**
+
+| AI Application               | Engineering Value                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------------- |
+| **Productivity Improvement** | Reduce repetitive simulation, parameter sweeps and manual design-space evaluation            |
+| **Decision-Making**          | Enable rapid quantitative comparison of architectures and design alternatives                |
+| **Work Quality**             | Improve consistency, traceability and validation of engineering evaluations                  |
+| **Cost Reduction**           | Reduce computational effort, engineering iteration time and unnecessary prototype evaluation |
 
 ---
 
-### 7.7. ANN-Based AI Engine (Surrogate Modeling)
+## **7.3. Software Workflow**
 
-| Item | Description |
-| :--- | :--- |
-| **ANN Purpose** | Replace repeated heavy simulations during optimization |
-| **ANN Inputs** | Ambient temperature, compressor size, flow rates, architecture type |
-| **ANN Outputs** | COP, heating/cooling capacity, power consumption |
-| **Benefit** | Real-time performance prediction |
-| **Accuracy Role** | High correlation with physics-based simulation results |
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Step</font></th>
+<th><font color="white">Engineering Activity</font></th>
+</tr>
+<tr>
+<td><b>1</b></td>
+<td>OEM and engineering requirements are entered through a graphical interface.</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>2</b></td>
+<td>Initial system architecture and engineering parameter ranges are defined.</td>
+</tr>
+<tr>
+<td><b>3</b></td>
+<td>Physics-based simulations generate reference data across the design space.</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>4</b></td>
+<td>ANN surrogate models learn the validated relationship between engineering inputs and system performance.</td>
+</tr>
+<tr>
+<td><b>5</b></td>
+<td>Optimization algorithms explore and refine candidate architectures and parameter combinations.</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>6</b></td>
+<td>AI-generated predictions are evaluated against physics-based reference data and engineering constraints.</td>
+</tr>
+<tr>
+<td><b>7</b></td>
+<td>Selected concepts are verified using high-fidelity Simulink / GT-SUITE models.</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>8</b></td>
+<td>Performance, energy, thermal and cost-related trade-offs are summarized for engineering decision-making.</td>
+</tr>
+</table>
 
 ---
 
-### 7.8. Development Roadmap
+## **7.4. Overall Software Architecture**
 
-| Phase | Duration | Deliverables |
-| :--- | :--- | :--- |
-| **Phase 1** | 6 months | Parametric Simulink model |
-| **Phase 2** | 3 months | AI training & validation |
-| **Phase 3** | 3 months | GUI and optimization integration |
-| **Phase 4** | 2 months | OEM demo and reporting automation |
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Layer</font></th>
+<th><font color="white">Function</font></th>
+<th><font color="white">Technology</font></th>
+</tr>
+<tr>
+<td><b>Engineering Input Interface</b></td>
+<td>Capture vehicle, motor, electrical and thermal requirements</td>
+<td>MATLAB App Designer</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Physics-Based Simulation</b></td>
+<td>High-fidelity electro-thermal and thermal-fluid system modeling</td>
+<td>Simulink / GT-SUITE / CFD</td>
+</tr>
+<tr>
+<td><b>AI / ANN Engine</b></td>
+<td>Fast surrogate modeling of system performance</td>
+<td>ANN / Deep Learning</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Optimization Layer</b></td>
+<td>Automated design-space exploration and parameter optimization</td>
+<td>Genetic Algorithm / Bayesian Optimization</td>
+</tr>
+<tr>
+<td><b>Validation Layer</b></td>
+<td>Evaluate AI predictions against physics-based results</td>
+<td>Simulation / Statistical Validation</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Decision Support</b></td>
+<td>Engineering trade-off analysis and decision-ready outputs</td>
+<td>MATLAB / Plots / Tables / Reports</td>
+</tr>
+</table>
+
+---
+
+## **7.5. OEM & Engineering Input Parameters**
+
+### **Vehicle & System Requirements**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Parameter</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Vehicle Data</b></td>
+<td>Vehicle segment, BEV architecture and drivetrain configuration</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Electrical Architecture</b></td>
+<td>DC-link voltage, battery voltage and electrical power limits</td>
+</tr>
+<tr>
+<td><b>Environmental Conditions</b></td>
+<td>Ambient temperature range, humidity and altitude</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Thermal Requirements</b></td>
+<td>Cabin heating and cooling demand, battery heating and cooling requirements</td>
+</tr>
+<tr>
+<td><b>Operating Scenarios</b></td>
+<td>Drive cycles, load profiles and transient operating conditions</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>System Constraints</b></td>
+<td>Packaging limits, mass constraints and energy consumption targets</td>
+</tr>
+<tr>
+<td><b>Cost Constraints</b></td>
+<td>Component cost sensitivity and system cost targets</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Regulatory</b></td>
+<td>Refrigerant type, safety and compliance constraints</td>
+</tr>
+</table>
+
+### **Electric Motor Specifications**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Parameter</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Motor Type</b></td>
+<td>PMSM / IPMSM / BLDC / Induction Motor</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Rated Power</b></td>
+<td>Continuous rated power [kW]</td>
+</tr>
+<tr>
+<td><b>Peak Power</b></td>
+<td>Maximum short-duration power [kW]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Rated Voltage</b></td>
+<td>Nominal motor voltage [V]</td>
+</tr>
+<tr>
+<td><b>DC-Link Voltage</b></td>
+<td>Nominal and operating DC bus voltage [V]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Rated Current</b></td>
+<td>Continuous RMS current [A]</td>
+</tr>
+<tr>
+<td><b>Peak Current</b></td>
+<td>Maximum current capability [A]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Rated Speed</b></td>
+<td>Nominal operating speed [rpm]</td>
+</tr>
+<tr>
+<td><b>Maximum Speed</b></td>
+<td>Maximum mechanical speed [rpm]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Rated Torque</b></td>
+<td>Continuous torque [Nm]</td>
+</tr>
+<tr>
+<td><b>Peak Torque</b></td>
+<td>Maximum short-duration torque [Nm]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Pole Pairs</b></td>
+<td>Number of electromagnetic pole pairs</td>
+</tr>
+<tr>
+<td><b>Winding Resistance</b></td>
+<td>Phase resistance [Ω]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Inductance</b></td>
+<td>d-axis / q-axis inductance [H]</td>
+</tr>
+<tr>
+<td><b>Back-EMF</b></td>
+<td>Back-electromotive-force characteristics</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Efficiency</b></td>
+<td>Motor efficiency map / operating-point efficiency [%]</td>
+</tr>
+<tr>
+<td><b>Torque-Speed Characteristics</b></td>
+<td>Torque, speed and power operating envelope</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Loss Characteristics</b></td>
+<td>Copper, iron, mechanical and stray losses</td>
+</tr>
+<tr>
+<td><b>Thermal Characteristics</b></td>
+<td>Winding, stator, rotor and housing thermal parameters</td>
+</tr>
+</table>
+
+### **Power Electronics & Drive Parameters**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Parameter</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Inverter Topology</b></td>
+<td>Three-phase inverter architecture</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Switching Devices</b></td>
+<td>Si / SiC semiconductor characteristics</td>
+</tr>
+<tr>
+<td><b>Switching Frequency</b></td>
+<td>Inverter switching frequency [kHz]</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>DC Bus</b></td>
+<td>Voltage range and current limits</td>
+</tr>
+<tr>
+<td><b>Drive Strategy</b></td>
+<td>FOC / vector control / torque control</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Current Limits</b></td>
+<td>Continuous and peak current constraints</td>
+</tr>
+<tr>
+<td><b>Inverter Losses</b></td>
+<td>Conduction and switching losses</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Control Constraints</b></td>
+<td>Voltage, current, speed and thermal operating limits</td>
+</tr>
+</table>
+
+### **Thermal Management Parameters**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Parameter</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Coolant</b></td>
+<td>Coolant type and thermophysical properties</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Coolant Flow Rate</b></td>
+<td>Mass / volumetric flow rate</td>
+</tr>
+<tr>
+<td><b>Coolant Temperature</b></td>
+<td>Inlet temperature and operating range</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Heat Exchangers</b></td>
+<td>Capacity, UA characteristics and pressure drop</td>
+</tr>
+<tr>
+<td><b>Cooling Architecture</b></td>
+<td>Motor, inverter, battery and cabin thermal interfaces</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Thermal Constraints</b></td>
+<td>Maximum allowable component temperatures</td>
+</tr>
+<tr>
+<td><b>Ambient Conditions</b></td>
+<td>Temperature, altitude and humidity</td>
+</tr>
+</table>
+
+---
+
+## **7.6. Physics-Based Simulation Core**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Category</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>Modeling Approach</b></td>
+<td>1D thermodynamic, thermal-fluid and electro-thermal modeling</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Main Subsystems</b></td>
+<td>Electric motor, inverter, refrigerant loop, coolant loops, cabin and battery interfaces</td>
+</tr>
+<tr>
+<td><b>Model Environment</b></td>
+<td>Simulink / GT-SUITE / CFD</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Role in Software</b></td>
+<td>Reference-data generation and final engineering validation</td>
+</tr>
+<tr>
+<td><b>Execution Mode</b></td>
+<td>Offline batch simulation and on-demand validation</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Engineering Role</b></td>
+<td>Physics-based simulation provides the reference for evaluating AI predictions</td>
+</tr>
+</table>
+
+---
+
+## **7.7. ANN-Based AI Engine — Surrogate Modeling**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Category</font></th>
+<th><font color="white">Description</font></th>
+</tr>
+<tr>
+<td><b>ANN Purpose</b></td>
+<td>Reduce repeated high-fidelity simulation effort during design-space exploration and optimization</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>ANN Inputs</b></td>
+<td>Motor characteristics, inverter parameters, ambient conditions, flow rates, thermal parameters, architecture type and operating conditions</td>
+</tr>
+<tr>
+<td><b>ANN Outputs</b></td>
+<td>Motor efficiency, thermal losses, component temperatures, COP, heating/cooling capacity and power consumption</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Primary Benefit</b></td>
+<td>Rapid performance prediction across the validated design space</td>
+</tr>
+<tr>
+<td><b>Engineering Application</b></td>
+<td>Fast architecture comparison, parameter sensitivity analysis and optimization</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Validation Basis</b></td>
+<td>AI predictions evaluated against physics-based simulation results</td>
+</tr>
+<tr>
+<td><b>Out-of-Domain Handling</b></td>
+<td>Uncertain or out-of-domain cases are referred back to high-fidelity simulation</td>
+</tr>
+</table>
+
+---
+
+## **7.8. AI Output Evaluation & Engineering Validation**
+
+A central principle of the software is that **AI-generated outputs are treated as engineering decision-support information and must be critically evaluated before use.**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Validation Dimension</font></th>
+<th><font color="white">Engineering Check</font></th>
+</tr>
+<tr>
+<td><b>Prediction Accuracy</b></td>
+<td>Compare ANN predictions against physics-based simulation results</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Physical Plausibility</b></td>
+<td>Verify consistency with expected engineering and thermodynamic behavior</td>
+</tr>
+<tr>
+<td><b>Design-Space Validity</b></td>
+<td>Confirm inputs remain within the validated AI model domain</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Constraint Compliance</b></td>
+<td>Check electrical, thermal, mechanical, packaging and operating constraints</td>
+</tr>
+<tr>
+<td><b>Robustness</b></td>
+<td>Evaluate model behavior under parameter and operating-condition variations</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Exception Handling</b></td>
+<td>Escalate uncertain or out-of-domain cases to high-fidelity simulation</td>
+</tr>
+<tr>
+<td><b>Engineering Review</b></td>
+<td>Final interpretation and design decisions remain subject to engineering review</td>
+</tr>
+</table>
+
+---
+
+## **7.9. Optimization & Engineering Decision Support**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Engineering Function</font></th>
+<th><font color="white">AI / Software Contribution</font></th>
+</tr>
+<tr>
+<td><b>Architecture Exploration</b></td>
+<td>Compare alternative system architectures across multiple operating scenarios</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Parameter Optimization</b></td>
+<td>Identify suitable motor, inverter and thermal-system parameters</td>
+</tr>
+<tr>
+<td><b>Performance Analysis</b></td>
+<td>Evaluate efficiency, thermal performance, power consumption and system capacity</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Sensitivity Analysis</b></td>
+<td>Identify parameters with the greatest influence on system performance</td>
+</tr>
+<tr>
+<td><b>Trade-Off Analysis</b></td>
+<td>Evaluate performance, energy, thermal and cost-related trade-offs</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Design Screening</b></td>
+<td>Rapidly identify candidate concepts for detailed engineering evaluation</td>
+</tr>
+<tr>
+<td><b>High-Fidelity Verification</b></td>
+<td>Re-evaluate selected candidates using physics-based simulation</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Decision Output</b></td>
+<td>Generate engineering-ready plots, tables and quantitative comparison reports</td>
+</tr>
+</table>
+
+### **AI-Driven Engineering Value**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">AMETEK AI Requirement</font></th>
+<th><font color="white">Implementation in the Platform</font></th>
+</tr>
+<tr>
+<td><b>Improve Productivity</b></td>
+<td>Reduce repetitive high-fidelity simulations, manual parameter sweeps and engineering evaluation effort</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Improve Decision-Making</b></td>
+<td>Provide rapid, quantitative comparison of architectures, parameters and system trade-offs</td>
+</tr>
+<tr>
+<td><b>Improve Work Quality</b></td>
+<td>Apply structured validation, physical plausibility checks, constraint verification and engineering review</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Reduce Costs</b></td>
+<td>Reduce computational effort, engineering iteration time and unnecessary prototype or physical evaluation</td>
+</tr>
+<tr>
+<td><b>Identify AI Use Cases</b></td>
+<td>Apply AI where surrogate modeling provides measurable value over repeated high-fidelity simulation</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Critically Evaluate AI Outputs</b></td>
+<td>Validate predictions against physics-based models, engineering constraints and the validated model domain</td>
+</tr>
+</table>
+
+---
+
+## **7.10. Development Roadmap**
+
+<table>
+<tr bgcolor="#1F4E78">
+<th><font color="white">Phase</font></th>
+<th><font color="white">Duration</font></th>
+<th><font color="white">Primary Deliverable</font></th>
+</tr>
+<tr>
+<td><b>Phase 1 — Physics Model</b></td>
+<td>6 months</td>
+<td>Parametric Simulink / GT-SUITE model and reference simulation dataset</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Phase 2 — AI Development</b></td>
+<td>3 months</td>
+<td>ANN training, validation and robustness assessment</td>
+</tr>
+<tr>
+<td><b>Phase 3 — Optimization Integration</b></td>
+<td>3 months</td>
+<td>AI-assisted optimization and design-space exploration</td>
+</tr>
+<tr bgcolor="#F3F8FC">
+<td><b>Phase 4 — Decision Support</b></td>
+<td>2 months</td>
+<td>Engineering GUI, reporting and OEM demonstration</td>
+</tr>
+</table>
+
+---
+
+## **Engineering Principle**
+
+> **AI accelerates engineering decisions; physics-based models and engineering judgment remain the validation authority.**
+
+This approach positions AI as an **engineering productivity and decision-support capability**, rather than a replacement for physics-based engineering analysis or engineering judgment.
 
 
 
