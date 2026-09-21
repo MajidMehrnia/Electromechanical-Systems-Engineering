@@ -383,9 +383,9 @@ The software is designed to:
 
 ---
 
-## 7.5 OEM & Engineering Input Parameters
+## 7.5 OEM and Engineering Input Parameters
 
-### Vehicle & System Requirements
+### Vehicle and System Requirements
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -511,7 +511,7 @@ The software is designed to:
 </tr>
 </table>
 
-### Power Electronics & Drive Parameters
+### Power Electronics and Drive Parameters
 
 <table>
 <tr bgcolor="#1F4E78">
@@ -626,7 +626,7 @@ The software is designed to:
 
 ---
 
-## 7.7 ANN-Based AI Engine — Surrogate Modeling
+## 7.7 ANN-Based AI Engine
 
 <table>
 <tr bgcolor="#1F4E78">
