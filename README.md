@@ -254,7 +254,7 @@ Typical state transitions are governed by:
 
 ### Embedded C Firmware Implementation
 
-The following example illustrates the structure of a simplified VCU supervisory-control function:
+The following implementation defines a simplified VCU supervisory-control function for vehicle-level control, status monitoring, and command management:
 
 ```c
 #include "vehicle_control.h"
