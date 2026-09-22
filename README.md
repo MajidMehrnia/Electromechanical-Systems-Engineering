@@ -156,7 +156,7 @@ This Simscape Driveline Simple Gear block parameterizes the mechanical reduction
 <img width="821" height="466" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
 <br><br>
 ## 04. Control & Embedded Firmware Development
-The control architecture is designed in **Simulink** to enable precise motor control, dynamic load tracking, and integrated electro-thermal management:
+The control architecture is designed to enable precise motor control, dynamic load tracking, and integrated electro-thermal management.
 
 * **Electric Motor & Motion Control:** Executes speed and torque command generation ($T_{cmd}$) based on driver demand ($VehSpdRef$), enabling dynamic load regulation, precise motion tracking, and transient torque control for the electric drive unit.
 
