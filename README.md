@@ -252,7 +252,7 @@ Typical state transitions are governed by:
 * Over-temperature conditions
 * System fault status
 
-### Example Embedded C
+### Embedded C Firmware Implementation
 
 The following example illustrates the structure of a simplified VCU supervisory-control function:
 
@@ -300,7 +300,7 @@ void VehicleControl_Step(void)
 }
 ```
 
-### CAN Message Handling Example
+### CAN Communication & Message Handling
 
 ```c
 void CAN_ProcessMessage(const CAN_Message_t *msg)
