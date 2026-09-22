@@ -1074,9 +1074,6 @@ The model requires the following products:
 
 See [license](LICENSE.md) file attached to this repository
 
-## Project status
-In development
-
 ## Sources
 [1] A Holistic Approach for Designing a Battery Electric Vehicle Thermal Management System, 
 Steve Miller, Lorenzo Nicoletti
