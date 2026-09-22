@@ -12,7 +12,7 @@ A key objective of this work is to develop an **[AI-Enabled Engineering Value & 
 1. [System Architecture](#01-system-architecture)
 2. [Motor & Drive](#02-motor--drive)
 3. [Gearbox & Mechanical Load](#03-gearbox--mechanical-load)
-4. [Motion & Embedded Control](#04-motion--embedded-control)
+4. [Control & Embedded Firmware Development](#04-control--embedded-firmware-development)  
 5. [Electro-Thermal Co-Simulation](#05-electro-thermal-co-simulation)
 6. [ECAD / MCAD / DFM Integration](#06-ecad--mcad--dfm-integration)
 7. [AI/ML Modeling](#07-aiml-modeling)
@@ -155,7 +155,7 @@ This Simscape Driveline Simple Gear block parameterizes the mechanical reduction
 <br><br>
 <img width="821" height="466" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
 <br><br>
-## 04. Motion & Embedded Control
+## 04. Control & Embedded Firmware Development
 The control architecture is designed in **Simulink** to enable precise motor control, dynamic load tracking, and integrated electro-thermal management:
 
 * **Electric Motor & Motion Control:** Executes speed and torque command generation ($T_{cmd}$) based on driver demand ($VehSpdRef$), enabling dynamic load regulation, precise motion tracking, and transient torque control for the electric drive unit.
@@ -164,9 +164,7 @@ The control architecture is designed in **Simulink** to enable precise motor con
 <img width="1918" height="795" alt="9-5" src="https://github.com/user-attachments/assets/9f4ab89b-5ed5-444d-8c9b-95f26ebda8a4" />
 <br><br>
 
-## Embedded Firmware Development
-
-This project also includes a conceptual **Embedded C firmware architecture** for an electric vehicle **Vehicle Control Unit (VCU)**. The firmware layer connects the model-based vehicle system architecture with real-time embedded control, vehicle-state management and CAN-based communication with major vehicle subsystems.
+This project  includes a conceptual **Embedded C firmware architecture** for an electric vehicle **Vehicle Control Unit (VCU)**. The firmware layer connects the model-based vehicle system architecture with real-time embedded control, vehicle-state management and CAN-based communication with major vehicle subsystems.
 
 The implementation is structured around an STM32-based VCU with **C, FreeRTOS and CAN communication**, following a modular architecture suitable for prototyping and Hardware-in-the-Loop (HIL) development.
 
