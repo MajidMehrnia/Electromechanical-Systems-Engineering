@@ -178,7 +178,7 @@ This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the r
 <img width="1226" height="364" alt="image" src="https://github.com/user-attachments/assets/567c381d-a811-4ea5-a1e1-e61f3a3767bc" />
 </p>
 <br>
-An integrated ECAD-MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. Electrical design data, interfaces and connectivity are therefore linked to the MATLAB/Simulink/Simscape/GT-SUITE models used to analyze the EV system. This enables traceability from electrical requirements → E/E architecture → power and control interfaces → electromechanical system models → mechanical integration → verification and PLM release.
+An integrated ECAD-MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. Xpedition (ECAD) defines the electrical design, Capital (E/E Systems Engineering) defines the electrical architecture, wiring and connectivity, while NX (MCAD) defines the mechanical system and 3D integration. These engineering models are connected to the MATLAB/Simulink/Simscape/GT-SUITE environment for system-level EV analysis, linking electrical, mechanical and system models from design → system analysis → integration → verification → PLM release.
 <br><br>
 <p align="center">
  <b>XML helped connect the traditionally separated ECAD and MCAD
