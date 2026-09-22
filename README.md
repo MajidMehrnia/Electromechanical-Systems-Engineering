@@ -14,7 +14,7 @@ A key objective of this work is to develop an **[AI-Enabled Engineering Value & 
 3. [Gearbox & Mechanical Load](#03-gearbox--mechanical-load)
 4. [Motion & Embedded Control](#04-motion--embedded-control)
 5. [Electro-Thermal Co-Simulation](#05-electro-thermal-co-simulation)
-6. [ECAD & MCAD Interfaces](#06-ecad--mcad-interfaces)
+6. [ECAD / MCAD / DFM Integration](#06-ecad--mcad--dfm-integration)
 7. [AI/ML Modeling](#07-aiml-modeling)
 8. [NPI Flowchart](#08-npi-flowchart)
 9. [Results](#09-results)
@@ -171,7 +171,8 @@ This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the r
 <br><br>
 <img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
 <br><br>
-## 06. ECAD & MCAD Interfaces
+## 06. ECAD / MCAD / DFM Integration
+Multi-domain digital thread closes the loop between E/E design, 3D mechanical packaging, and manufacturing validation before physical prototyping. By linking domain-specific models directly into the system-level simulation environment, engineering team can continuously verify electrical and thermal performance under realistic operating conditions. As a result, critical design issues are caught early in the development cycle, sign-off processes are accelerated, and the entire product baseline is seamlessly released to PLM with full traceability.
 <br>
 <p align="center">
  <b>An integrated ECAD-MCAD flow creates a digital thread through the design</b>
