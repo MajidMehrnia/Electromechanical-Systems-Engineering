@@ -159,11 +159,229 @@ This Simscape Driveline Simple Gear block parameterizes the mechanical reduction
 The control architecture is designed in **Simulink** to enable precise motor control, dynamic load tracking, and integrated electro-thermal management:
 
 * **Electric Motor & Motion Control:** Executes speed and torque command generation ($T_{cmd}$) based on driver demand ($VehSpdRef$), enabling dynamic load regulation, precise motion tracking, and transient torque control for the electric drive unit.
-* **Thermal Protection & Component Actuation:** Generates closed-loop control signals ($cmd$) for coolant pumps (motor and inverter loops), the refrigerant compressor, and the condenser fan to ensure active thermal protection during high-torque transients.
-* **Multi-Loop Thermal Regulation:** Controls radiator and chiller bypass valves, dynamically switching between series and parallel cooling modes based on real-time component temperatures ($T_{motor}$, $T_{coolant\_inverter\_out}$).
-* **Cabin Climate Management:** Integrates HVAC blower and PTC heater actuation to satisfy climate setpoints ($T_{setpoint}$) without compromising powertrain thermal safety.
+
 <br><br>
 <img width="1918" height="795" alt="9-5" src="https://github.com/user-attachments/assets/9f4ab89b-5ed5-444d-8c9b-95f26ebda8a4" />
+<br><br>
+
+## Embedded Firmware Development
+
+This project also includes a conceptual **Embedded C firmware architecture** for an electric vehicle **Vehicle Control Unit (VCU)**. The firmware layer connects the model-based vehicle system architecture with real-time embedded control, vehicle-state management and CAN-based communication with major vehicle subsystems.
+
+The implementation is structured around an STM32-based VCU with **C, FreeRTOS and CAN communication**, following a modular architecture suitable for prototyping and Hardware-in-the-Loop (HIL) development.
+
+### Embedded Firmware Scope
+
+| Area | Implementation | Engineering Purpose |
+|---|---|---|
+| **Embedded C** | Modular C application layer | Real-time vehicle control and system coordination |
+| **STM32 MCU** | STM32-based VCU architecture | Embedded execution platform |
+| **FreeRTOS** | Task-based real-time scheduling | Deterministic execution of control and communication functions |
+| **CAN Communication** | CAN message handling and interfaces | Communication with BMS, inverter/motor controller and charger |
+| **Vehicle Control Logic** | State machine and supervisory control | Vehicle operating-state management |
+| **Fault Management** | Fault detection and safe-state handling | System protection and diagnostic response |
+| **BMS Interface** | CAN-based BMS status/command interface | Battery monitoring and control coordination |
+| **Motor Controller Interface** | CAN-based motor/inverter interface | Drive, torque and regenerative-braking coordination |
+| **Charger Interface** | CAN-based charger interface | Charging-state and charging-command management |
+| **Diagnostics** | UART debug and status monitoring | Development-time observability and troubleshooting |
+
+### Firmware Architecture
+
+| Module | Primary Responsibility |
+|---|---|
+| `main.c` | MCU initialization, peripheral setup and RTOS startup |
+| `vehicle_control.c` | Vehicle state machine, supervisory control and fault logic |
+| `can_bus.c` | CAN initialization, message reception, transmission and buffering |
+| `bms_can.c` | BMS CAN message encoding, decoding and status handling |
+| `motor_can.c` | Motor-controller CAN message encoding, decoding and command handling |
+| `charger_can.c` | Charger CAN message encoding, decoding and command handling |
+| `fault_manager.c` | Fault detection, protection thresholds and safe-state handling |
+| `state_machine.c` | Vehicle operating-state transitions |
+| `thermal_manager.c` | Thermal-limit monitoring and supervisory thermal control |
+| `diagnostics.c` | Runtime diagnostics and development logging |
+| `ev_config.h` | CAN identifiers, safety thresholds and timing parameters |
+| `ev_types.h` | Shared data structures, states and command definitions |
+
+### Real-Time Task Structure
+
+| Task | Priority | Typical Period | Function |
+|---|---:|---:|---|
+| `ControlTask` | High | 10 ms | Vehicle-state evaluation, supervisory control and command generation |
+| `CanRxTask` | High | Event-driven | CAN message reception, decoding and status updates |
+| `ThermalTask` | Medium | 50–100 ms | Thermal monitoring and protection logic |
+| `DiagnosticsTask` | Low | 500 ms | Diagnostic logging and system-status reporting |
+
+The reference VCU architecture uses separate control, CAN reception and diagnostic tasks under FreeRTOS, with the main control loop operating at a 10 ms period.
+
+### CAN Interface Matrix
+
+| Node | Direction | Example Data |
+|---|---|---|
+| **BMS** | BMS → VCU | Battery voltage, current, temperature, SOC and status |
+| **BMS** | VCU → BMS | Contactor, charge and discharge requests |
+| **Motor Controller / Inverter** | Motor → VCU | Speed, current, temperature, operating state |
+| **Motor Controller / Inverter** | VCU → Motor | Enable, torque, direction and regenerative-braking commands |
+| **Charger** | Charger → VCU | Charging voltage, current and charger state |
+| **Charger** | VCU → Charger | Charge enable and target voltage/current |
+
+The reference implementation defines separate CAN interfaces for BMS, motor controller and charger communication and uses dedicated status and command structures for each subsystem.
+
+### Vehicle State Machine
+
+```text
+IDLE
+  |
+  v
+READY
+  |
+  +-----------> DRIVE
+  |
+  +-----------> CHARGING
+  |
+  +-----------> FAULT
+````
+
+Typical state transitions are governed by:
+
+* BMS availability and battery conditions
+* High-voltage system readiness
+* Motor-controller status
+* Accelerator and brake inputs
+* Charger connection and charging conditions
+* Thermal limits
+* CAN communication timeout
+* Over-voltage / under-voltage conditions
+* Over-temperature conditions
+* System fault status
+
+### Example Embedded C
+
+The following example illustrates the structure of a simplified VCU supervisory-control function:
+
+```c
+#include "vehicle_control.h"
+#include "bms_can.h"
+#include "motor_can.h"
+#include "fault_manager.h"
+
+void VehicleControl_Step(void)
+{
+    BMS_Status_t bms;
+    Motor_Status_t motor;
+    Motor_Command_t command;
+
+    BMS_GetStatus(&bms);
+    Motor_GetStatus(&motor);
+
+    if (FaultManager_IsActive())
+    {
+        command.enable = false;
+        command.torque_request = 0.0f;
+        command.regen_request = 0.0f;
+
+        Motor_SendCommand(&command);
+        return;
+    }
+
+    if (bms.soc > SOC_MIN &&
+        bms.temperature < BATTERY_TEMP_MAX &&
+        motor.ready)
+    {
+        command.enable = true;
+        command.torque_request = Vehicle_GetTorqueRequest();
+        command.regen_request = Vehicle_GetRegenRequest();
+    }
+    else
+    {
+        command.enable = false;
+        command.torque_request = 0.0f;
+        command.regen_request = 0.0f;
+    }
+
+    Motor_SendCommand(&command);
+}
+```
+
+### CAN Message Handling Example
+
+```c
+void CAN_ProcessMessage(const CAN_Message_t *msg)
+{
+    switch (msg->id)
+    {
+        case CAN_ID_BMS_STATUS:
+            BMS_DecodeStatus(msg);
+            break;
+
+        case CAN_ID_MOTOR_STATUS:
+            Motor_DecodeStatus(msg);
+            break;
+
+        case CAN_ID_CHARGER_STATUS:
+            Charger_DecodeStatus(msg);
+            break;
+
+        default:
+            Diagnostics_ReportUnknownCANMessage(msg->id);
+            break;
+    }
+}
+```
+
+### Fault Handling
+
+The VCU monitors critical system conditions and transitions the vehicle to a safe state when predefined limits or communication conditions are violated.
+
+| Fault Condition           | Detection                | VCU Response                      |
+| ------------------------- | ------------------------ | --------------------------------- |
+| Battery over-temperature  | BMS temperature feedback | Disable drive request             |
+| Battery under-voltage     | BMS voltage feedback     | Disable drive request             |
+| Motor over-temperature    | Motor CAN status         | Torque limitation / drive disable |
+| CAN communication timeout | Message watchdog         | Enter safe state                  |
+| BMS fault                 | BMS status flag          | Disable HV-related commands       |
+| Inverter fault            | Motor-controller status  | Disable torque request            |
+| Charging fault            | Charger status           | Stop charging request             |
+
+### Development and Verification
+
+The firmware architecture is intended to support incremental verification from software simulation through embedded execution.
+
+| Verification Level | Method                                | Purpose                                                      |
+| ------------------ | ------------------------------------- | ------------------------------------------------------------ |
+| **Model-Level**    | MATLAB / Simulink                     | Verify control logic and system behavior                     |
+| **Software-Level** | C unit testing                        | Verify individual firmware modules                           |
+| **SIL**            | Software-in-the-Loop                  | Compare embedded control logic with system models            |
+| **HIL**            | Hardware-in-the-Loop                  | Validate VCU behavior with simulated vehicle subsystems      |
+| **Embedded Test**  | STM32 + CAN network                   | Verify real-time execution and communication                 |
+| **System-Level**   | EV system model + embedded controller | Validate interaction between controls and vehicle subsystems |
+
+### Engineering Integration
+
+The embedded firmware layer complements the model-based EV system study by providing a pathway from system-level modeling to real-time implementation.
+
+| Engineering Layer         | Technology                                  | Role                                          |
+| ------------------------- | ------------------------------------------- | --------------------------------------------- |
+| **Vehicle System Model**  | MATLAB / Simulink / Simscape / GT-SUITE     | System-level analysis and control development |
+| **Control Algorithm**     | Simulink / Embedded C                       | Control logic development                     |
+| **Embedded Firmware**     | C / STM32 / FreeRTOS                        | Real-time implementation                      |
+| **Vehicle Communication** | CAN                                         | ECU-to-ECU communication                      |
+| **Validation**            | SIL / HIL / Embedded Testing                | Verification of control behavior              |
+| **Physical System**       | Motor / Inverter / Battery / Thermal System | Target electromechanical system               |
+
+### Key Engineering Capabilities
+
+* Embedded C development
+* STM32-based ECU architecture
+* Real-time control with FreeRTOS
+* CAN communication and message handling
+* VCU supervisory control
+* BMS, inverter and charger interfaces
+* Vehicle state-machine design
+* Fault detection and safe-state management
+* Thermal and electrical constraint monitoring
+* SIL / HIL-oriented verification
+* Model-based control integration
+* Embedded-to-system engineering traceability
 <br><br>
 
 ## 05. Electro-Thermal Co-Simulation
