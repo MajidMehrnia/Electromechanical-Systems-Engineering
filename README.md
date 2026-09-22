@@ -178,8 +178,8 @@ This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the r
 <img width="1226" height="364" alt="image" src="https://github.com/user-attachments/assets/567c381d-a811-4ea5-a1e1-e61f3a3767bc" />
 </p>
 <br>
-An integrated ECAD-MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. **Xpedition (ECAD)** defines the electrical and PCB design, **Capital (E/E Systems Engineering)** defines the electrical architecture, wiring and connectivity, **NX (MCAD)** defines the mechanical system and 3D integration, and **Valor (DFM)** validates manufacturability and supports design-for-manufacturing decisions. These engineering tools are connected to the **MATLAB/Simulink/Simscape/GT-SUITE** environment for system-level EV analysis, linking electrical, mechanical, manufacturing, and system models from design → system analysis → integration → verification → manufacturing → PLM release.
 
+An integrated ECAD-MCAD digital thread connects the electrical architecture and wiring-harness definition with the model-based system engineering environment. **Xpedition (ECAD)** defines the electrical and PCB design, **Capital** (E/E Systems Engineering) defines the electrical architecture, wiring and connectivity, **NX (MCAD)** defines the mechanical system and 3D integration, and **Valor (DFM)** validates manufacturability and supports design-for-manufacturing decisions. These engineering tools are connected to the MATLAB/Simulink/Simscape/GT-SUITE environment for system-level EV analysis, linking electrical, mechanical, manufacturing, and system models from design → system analysis → integration → verification → manufacturing → PLM release.
 <br><br>
 <p align="center">
  <b>XML helped connect the traditionally separated ECAD and MCAD
