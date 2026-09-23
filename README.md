@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository supports a New Product Development program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electrical and mechanical systems for an electric vehicle (EV) sedan.
+This repository supports a New Product Development program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electrical and mechanical components for an electric vehicle (EV) sedan.
 
 The engineering architecture follows a **modular system approach**, enabling the integration, configuration, and evaluation of different electrical, mechanical, control, and thermal management subsystems across a range of EV architectures and operating conditions. The EV system integrates the battery and energy system, power electronics, electric motor, gearbox, brakes, thermal management, encoders and sensors, control systems, and embedded software within a modular architecture.
 
