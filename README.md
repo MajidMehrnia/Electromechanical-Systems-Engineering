@@ -1,11 +1,13 @@
 # Electromechanical Systems Engineering
 
 ## Description
-This repository supports a New Product Development (NPD/NPI) program focused on the design, modeling, dynamic simulation, and performance analysis of electric drive units, power electronics (inverters/DC-DC converters), mechanical transmissions (driveline/gears), and coupled electrical and thermal systems.
 
-The project evaluates key engineering performance metrics for high-torque-density electric motors and power-electronics thermal management under real-world drive cycles and heavy-duty transient operating conditions for an electric vehicle (EV) sedan. The novelty lies in the integrated co-simulation of electrical and control loops with mechanical system dynamics, enabling system-level analysis of coupled electromechanical interactions. 
+This repository supports a New Product Development program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electrical and mechanical systems for an electric vehicle (EV) sedan.
+
+The engineering architecture follows a **modular system approach**, enabling the integration, configuration, and evaluation of different electrical, mechanical, control, and thermal management subsystems across a range of EV architectures and operating conditions. The EV system integrates the **battery and energy system, power electronics, electric motor, gearbox, braking and wheel systems, thermal management, encoders and sensors, control systems, and embedded software** within a modular architecture.
 
 A key objective of this work is to develop an **[AI-Enabled Engineering Value & Optimization Platform](#ai-enabled-engineering-value--optimization-platform)** for the design and optimization of EV systems across a broad range of electrical and mechanical configurations, enabling **data-driven engineering decision-making** and an **optimized cost position**.
+
 
 ## Project Structure
 
