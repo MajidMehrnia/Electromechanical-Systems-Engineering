@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electromechanical, rotating, and thermo-fluid components for an **electric vehicle thermal-management system**. The work integrates **electric drives, motors, pumps, blowers, and thermal-fluid circuits coupled with a scroll compressor** to evaluate **system-level performance, efficiency, and reliability**.
+This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electromechanical, rotating, and thermo-fluid components for an electric vehicle thermal-management system. The work integrates **electric drives, motors, pumps, blowers, and thermal-fluid circuits coupled with a scroll compressor** to evaluate **system-level performance, efficiency, and reliability**.
 
 
 
@@ -1068,6 +1068,10 @@ The complete executable models and the underlying management tool is available b
 
 * Access the simulation files in the [Simulation](input_data) and [Results](results) directories.
 
+This plot shows the power consumed by the thermal management system to cool the vehicle components and cabin. The largest power consumption occurs in the refrigerant compressor when the chiller bypass valve directs coolant to the chiller to cool the batteries.
+<br><br>
+<img width="908" height="546" alt="image" src="https://github.com/user-attachments/assets/936f5b02-17b3-496f-bf7b-aedb204c37af" />
+<br><br>
 This Simscape Data Inspector plot illustrates the transient current waveform ($i_1$) for the DC-DC converter block over a long-term simulation profile of $2.5 \times 10^4\text{ s}$. The time-series response captures steady-state current draw baseline around $0.8\text{ A}$ to $1.0\text{ A}$ interrupted by periodic high-amplitude current spikes reaching up to $2.5\text{ A}$. These dynamic current transients represent cyclic peak power demands from auxiliary low-voltage loads and dynamic charging events within the power distribution network. Analyzing these current profiles is critical for evaluating component electrical stress, conductor sizing, and thermal dissipation management under representative driving scenarios.
 <br><br>
 <img width="1918" height="793" alt="9-6" src="https://github.com/user-attachments/assets/8eaf0f07-25ab-4d4c-a1bc-33c3a1c1ec37" />
