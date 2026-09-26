@@ -151,13 +151,11 @@ This Simscape Electrical motor and drive block is parameterized at the system le
 <img width="813" height="1029" alt="image" src="https://github.com/user-attachments/assets/0c8a0152-dcca-4e3a-b0a0-5a12a7340e6b" />
 <br><br>
 ## 03. Pumps
+
+In this system architecture, there are two pumps (P1 and P2) operating in separate coolant circuits. P1 provides thermal conditioning for the battery pack, DCDC converter, and onboard charger, whereas P2 regulates the temperature of the electric motor and interfaces directly with the chiller loop.
+
 <img width="589" height="216" alt="image" src="https://github.com/user-attachments/assets/fb3b6662-22fe-4b3e-a7fa-6afa6d319eac" />
 
-In this system architecture, **P1** and **P2** serve as coolant pumps for two distinct thermal loops:
-
-* **P1 (Battery & Power Electronics Pump):** Circulates coolant through high-voltage components, including the DCDC converter, onboard Charger, and Battery pack to maintain optimal operational temperatures.
-* **P2 (Drivetrain & Chiller Pump):** Manages thermal conditioning for the Electric Motor and interacts directly with the Chiller loop to handle high heat loads during driving.
-* **Active Routing:** Both pumps interface with multi-way valves (3-way/4-way) to direct coolant flow between the main Radiator, Chiller, and Heater based on system demands.
 
 | Pump | Primary Thermal Loop | Main Function |
 | :--- | :--- | :--- |
