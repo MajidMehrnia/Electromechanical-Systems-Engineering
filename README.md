@@ -2,9 +2,8 @@
 
 ## Description
 
-This repository supports a New Product Development program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electrical and mechanical components for an electric vehicle (EV) sedan.
+This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of **coupled electromechanical, rotating, and thermo-fluid components** for an electric vehicle. The work integrates **electric drives, motor, blowers, and thermal-fluid circuits with a Scroll compressor** to evaluate system-level performance, efficiency, reliability, and cost across the product lifecycle.
 
-The engineering architecture follows a modular system approach, enabling the integration, configuration, and evaluation of different electrical, mechanical, control, and thermal management subsystems across a range of system architectures and operating conditions. The system integrates the battery and energy system, power electronics, electric motor, gearbox, brakes, thermal management, encoders and sensors, control systems, and embedded software within a modular architecture.
 
 A key objective of this work is to develop an **[AI-Enabled Engineering Value & Optimization Platform](#ai-enabled-engineering-value--optimization-platform)** for the design and optimization of a system across a broad range of electrical and mechanical configurations, enabling data-driven engineering decision-making, **optimized cost positioning**, and engineering-to-supply-chain scenario analysis. The platform explores how engineering data and component demand signals can support cost, demand, capacity, and supply-chain optimization, with potential integration into enterprise planning environments such as Kinaxis Maestro.
 
