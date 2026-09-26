@@ -151,8 +151,9 @@ This Simscape Electrical motor and drive block is parameterized at the system le
 <img width="813" height="1029" alt="image" src="https://github.com/user-attachments/assets/0c8a0152-dcca-4e3a-b0a0-5a12a7340e6b" />
 <br><br>
 ## 03. Pumps
+<img width="589" height="216" alt="image" src="https://github.com/user-attachments/assets/fb3b6662-22fe-4b3e-a7fa-6afa6d319eac" />
 
-In this architecture, **P1** and **P2** serve as coolant pumps for two distinct thermal loops:
+In the system architecture, **P1** and **P2** serve as coolant pumps for two distinct thermal loops:
 
 * **P1 (Battery & Power Electronics Pump):** Circulates coolant through high-voltage components, including the DCDC converter, onboard Charger, and Battery pack to maintain optimal operational temperatures.
 * **P2 (Drivetrain & Chiller Pump):** Manages thermal conditioning for the Electric Motor and interacts directly with the Chiller loop to handle high heat loads during driving.
@@ -164,8 +165,12 @@ In this architecture, **P1** and **P2** serve as coolant pumps for two distinct 
 | **P2** | Electric Motor & Chiller | Heat dissipation for the electric powertrain and refrigerant-to-coolant heat exchange |
 
 ## 04. Compressor
-### 3D-to-1D Discretized Scroll Compressor Model
 
+### Compressor Subsystem
+
+The compressor drives the flow in the refrigerant loop. Instead of using a map-based compressor model commonly found in system simulations, a higher-fidelity, geometry-based 3D-to-1D discretized compressor model developed in GT-SUITE is integrated to achieve significantly higher accuracy and physical reliability.
+
+### 3D-to-1D Discretized Scroll Compressor Model
 This model implements a detailed 3D-to-1D discretized multi-chamber approach directly derived from 3D CAD scroll geometry rather than relying on empirical performance maps. The physical compression volume between the stationary and orbiting scrolls is discretized into discrete transient pockets (Chambers 1a–4a and 1b–4b) whose volume and porting areas dynamically evolve as a function of the orbital angle. By explicitly resolving flank and radial leakage paths between adjacent chambers, the model accurately predicts internal recirculation losses, thermal interactions, and discharge valve dynamics with high fidelity while maintaining 1D computational efficiency.
 <img width="856" height="500" alt="GT_Scroll" src="https://github.com/user-attachments/assets/f7d13a90-0bb6-4a4a-8dc9-9b23ac900a69" />
 <br><br>
