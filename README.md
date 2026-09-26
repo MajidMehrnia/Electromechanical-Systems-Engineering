@@ -25,7 +25,7 @@ A key objective of this work is to develop an **[AI-Enabled Engineering Value & 
 
 The figure below shows the complete electromechanical system architecture co-simulated using Simulink, Simscape, and GT-SUITE. Blue signal and physical lines represent the thermodynamic and fluid networks, including refrigerant loops, coolant channels, the chiller, radiator, and evaporator circuits. Brown lines denote the electrical power distribution and control interconnections between the high-voltage battery, DC-DC converter, charger, PTC heater, and electric motor drive. This integrated Simscape environment enables precise multi-physics dynamic simulation to evaluate transient thermal responses and energy efficiency across demanding vehicle drive cycles.
 <br><br>
-<img width="1280" height="596" alt="Sim_diagram" src="https://github.com/user-attachments/assets/46be4208-0ef6-48cd-b8c6-e85d227e8c28" />
+<img width="1280" height="596" alt="image" src="https://github.com/user-attachments/assets/305941ec-ccae-4513-a4bd-e29ad5ff7c39" />
 <br><br>
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/08c991d2-481e-4477-9fc6-348f638395f1" />
 <h3 align="center">Integrated Electromechanical & Thermal Management System</h3>
