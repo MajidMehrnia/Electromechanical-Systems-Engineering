@@ -151,14 +151,24 @@ This Simscape Electrical motor and drive block is parameterized at the system le
 <br><br>
 ## 03. Pumps
 
-This Simscape Driveline Simple Gear block parameterizes the mechanical reduction ratio between the electric motor and the driven axle. The transmission is configured with a continuous reduction gear ratio of $N_F/N_B = 9$ and same-direction output shaft rotation to amplify motor torque delivered to the driveline. Mechanical meshing losses are modeled using a constant efficiency formulation fixed at $97\%$ ($\eta = 0.97$) with a follower power threshold of $0.001\text{ W}$. This high-efficiency mechanical reduction unit enables accurate power transfer calculation and dynamic driveline load evaluation across vehicle operating cycles.
-<br><br>
-<img width="822" height="735" alt="9-2" src="https://github.com/user-attachments/assets/f738b58f-ef44-48c9-b39d-2a0d573a8668" />
-<br><br>
-<img width="821" height="466" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
-<br><br>
+In this architecture, **P1** and **P2** serve as coolant pumps for two distinct thermal loops:
+
+* **P1 (Battery & Power Electronics Pump):** Circulates coolant through high-voltage components, including the DCDC converter, onboard Charger, and Battery pack to maintain optimal operational temperatures.
+* **P2 (Drivetrain & Chiller Pump):** Manages thermal conditioning for the Electric Motor and interacts directly with the Chiller loop to handle high heat loads during driving.
+* **Active Routing:** Both pumps interface with multi-way valves (3-way/4-way) to direct coolant flow between the main Radiator, Chiller, and Heater based on system demands.
+
+| Pump | Primary Thermal Loop | Main Function |
+| :--- | :--- | :--- |
+| **P1** | Battery, DCDC & Charger | Precise temperature control for high-voltage battery safety and battery lifespan |
+| **P2** | Electric Motor & Chiller | Heat dissipation for the electric powertrain and refrigerant-to-coolant heat exchange |
 
 ## 04. Compressor
+### 3D-to-1D Discretized Scroll Compressor Model
+
+This model implements a detailed 3D-to-1D discretized multi-chamber approach directly derived from 3D CAD scroll geometry rather than relying on empirical performance maps. The physical compression volume between the stationary and orbiting scrolls is discretized into discrete transient pockets (Chambers 1a–4a and 1b–4b) whose volume and porting areas dynamically evolve as a function of the orbital angle. By explicitly resolving flank and radial leakage paths between adjacent chambers, the model accurately predicts internal recirculation losses, thermal interactions, and discharge valve dynamics with high fidelity while maintaining 1D computational efficiency.
+<img width="856" height="500" alt="GT_Scroll" src="https://github.com/user-attachments/assets/f7d13a90-0bb6-4a4a-8dc9-9b23ac900a69" />
+<br><br>
+<img width="1280" height="599" alt="image" src="https://github.com/user-attachments/assets/39f0f387-08ca-4539-a389-9196e504ae7d" />
 
 
 ## 05. Control & Embedded Firmware Development
