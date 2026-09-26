@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of **coupled electromechanical, rotating, and thermo-fluid components** for an electric vehicle. The work integrates **electric drives, motor, blowers, and thermal-fluid circuits with a Scroll compressor** to evaluate system-level performance, efficiency, reliability, and cost across the product lifecycle.
+This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of **coupled electromechanical, rotating, and thermo-fluid components** for an electric vehicle. The work integrates **electric drives, motor, pumps, blower, and thermal-fluid circuits with a Scroll compressor** to evaluate system-level performance, efficiency and reliability.
 
 
 A key objective of this work is to develop an **[AI-Enabled Engineering Value & Optimization Platform](#ai-enabled-engineering-value--optimization-platform)** for the design and optimization of a system across a broad range of electrical and mechanical configurations, enabling data-driven engineering decision-making, **optimized cost positioning**, and engineering-to-supply-chain scenario analysis. The platform explores how engineering data and component demand signals can support cost, demand, capacity, and supply-chain optimization, with potential integration into enterprise planning environments such as Kinaxis Maestro.
@@ -12,13 +12,14 @@ A key objective of this work is to develop an **[AI-Enabled Engineering Value & 
 
 1. [System Architecture](#01-system-architecture)
 2. [Motor & Drive](#02-motor--drive)
-3. [Gearbox & Mechanical Load](#03-gearbox--mechanical-load)
-4. [Control & Embedded Firmware Development](#04-control--embedded-firmware-development)  
-5. [Electro-Thermal Co-Simulation](#05-electro-thermal-co-simulation)
-6. [ECAD / MCAD / DFM Integration](#06-ecad--mcad--dfm-integration)
-7. [AI/ML Modeling](#07-aiml-modeling)
-8. [NPI Flowchart](#08-npi-flowchart)
-9. [Results](#09-results)
+3. [Pumps](#03-pumps)
+4. [Compressor](#04-compressor)
+5. [Control & Embedded Firmware Development](#05-control--embedded-firmware-development)  
+6. [Electro-Thermal Co-Simulation](#06-electro-thermal-co-simulation)
+7. [ECAD / MCAD / DFM Integration](#07-ecad--mcad--dfm-integration)
+8. [AI/ML Modeling](#08-aiml-modeling)
+9. [NPI Flowchart](#09-npi-flowchart)
+10. [Results](#10-results)
 
    
 ## 01. System Architecture
@@ -148,7 +149,7 @@ This Simscape Electrical motor and drive block is parameterized at the system le
 <br><br>
 <img width="813" height="1029" alt="image" src="https://github.com/user-attachments/assets/0c8a0152-dcca-4e3a-b0a0-5a12a7340e6b" />
 <br><br>
-## 03. Gearbox & Mechanical Load
+## 03. Pumps
 
 This Simscape Driveline Simple Gear block parameterizes the mechanical reduction ratio between the electric motor and the driven axle. The transmission is configured with a continuous reduction gear ratio of $N_F/N_B = 9$ and same-direction output shaft rotation to amplify motor torque delivered to the driveline. Mechanical meshing losses are modeled using a constant efficiency formulation fixed at $97\%$ ($\eta = 0.97$) with a follower power threshold of $0.001\text{ W}$. This high-efficiency mechanical reduction unit enables accurate power transfer calculation and dynamic driveline load evaluation across vehicle operating cycles.
 <br><br>
@@ -156,7 +157,11 @@ This Simscape Driveline Simple Gear block parameterizes the mechanical reduction
 <br><br>
 <img width="821" height="466" alt="Driveline" src="https://github.com/user-attachments/assets/8cfc1bcb-6746-4658-8663-d031a9174066" />
 <br><br>
-## 04. Control & Embedded Firmware Development
+
+## 04. Compressor
+
+
+## 05. Control & Embedded Firmware Development
 The control architecture is designed to enable precise motor control, dynamic load tracking, and integrated electro-thermal system management.
 
 * **Electric Motor & Motion Control:** Executes speed and torque command generation ($T_{cmd}$) based on driver demand ($VehSpdRef$), enabling dynamic load regulation, precise motion tracking, and transient torque control for the electric drive unit.
@@ -385,12 +390,12 @@ The embedded firmware layer complements the model-based EV system study by provi
 * Embedded-to-system engineering traceability
 <br><br>
 
-## 05. Electro-Thermal Co-Simulation
+## 06. Electro-Thermal Co-Simulation
 This GT-SUITE sub-model captures the detailed 1D thermal-fluid dynamics of the refrigerant compressor loop co-simulated directly with Simulink. The circuit models two-phase refrigerant flow through inlet and outlet piping (`PipeRound`) connected between environmental boundary conditions and the compressor unit. Rotational speed commands and boundary states are dynamically exchanged with the Simulink control model via dedicated co-simulation interface ports. A specialized initialization block (`RefrigCircInit`) establishes state convergence for the refrigerant loop to ensure stable transient simulation during vehicle operational cycles.
 <br><br>
 <img width="1280" height="542" alt="GT-SUITE_blocks" src="https://github.com/user-attachments/assets/6f010da7-290a-4381-9ed3-0ad721b30cfa" />
 <br><br>
-## 06. ECAD / MCAD / DFM Integration
+## 07. ECAD / MCAD / DFM Integration
 Multi-domain digital thread closes the loop between E/E design, 3D mechanical packaging, and manufacturing validation before physical prototyping. By linking domain-specific models directly into the system-level simulation environment, engineering team can continuously verify electrical and thermal performance under realistic operating conditions. As a result, critical design issues are caught early in the development cycle, sign-off processes are accelerated, and the entire product baseline is seamlessly released to PLM with full traceability.
 <br>
 <p align="center">
@@ -413,7 +418,7 @@ This repository presents a model-based engineering study of an integrated electr
 
 The original vehicle-level architecture provides the foundation for investigating the interaction between electrical, mechanical, control and thermal domains. The focus of this repository is the engineering optimization of electromechanical motion systems and their interfaces, rather than the development of a complete vehicle model. The entire product lifecycle in this project is governed by the PLM framework, demonstrating how a robust "Single Source of Truth" can be established. This system integrates technical requirements with engineering execution by establishing strict document revision controls, transitioning engineering bills of materials (EBOM) to manufacturing skids (MBOM), and enforcing disciplined change log workflows (ECR/ECO/ECN). Ultimately, every technical optimization, such as power consumption reductions or material reusability, is directly linked to target costing and ROI models, proving that robust engineering governance is a direct driver of corporate profitability. 
 <br><br>
-## 07. AI/ML Modeling
+## 08. AI/ML Modeling
 
 This section outlines the AI/ML surrogate modeling framework developed using **Artificial Neural Networks (ANN)** to predict total system electromechanical performance. Trained on multi-physics datasets spanning varied electric motor specifications, gear ratios, and driveline parameters, the model rapidly estimates system-level thermal behavior. This data-driven approach replaces computationally expensive finite-element and lump-parameter dynamic simulations with high-speed predictive modeling. The ANN framework enables real-time optimization and rapid design-space exploration across diverse powertrain configurations and operating profiles.
 <br><br>
@@ -1034,14 +1039,14 @@ A central principle of the software is that **AI-generated outputs are treated a
 </table>
 <br><br>
 
-## 08. NPI Flowchart
+## 09. NPI Flowchart
 
 <p align="center">
  <img width="1267" height="703" alt="image" src="https://github.com/user-attachments/assets/735892a3-fd9d-4ce8-bfbb-678039c29123" />
 </p>
 
 
-## 09. Results
+## 10. Results
 
 The complete executable models and the underlying management tool is available below:
 
