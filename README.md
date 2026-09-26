@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electromechanical, rotating, and thermo-fluid components for an electric vehicle thermal-management system. The work integrates **electric drives, motors, pumps, blowers, and thermal-fluid circuits coupled with a scroll compressor** to evaluate **system-level performance, efficiency, and reliability**.
+This repository supports a New Product Development (NPD) program focused on the design, dynamic modeling, performance analysis, and optimization of coupled electromechanical, rotating, and thermo-fluid components for an electric vehicle thermal-management system. The work integrates **electric drives, motors, pumps, blowers, and thermal-fluid circuits coupled with a scroll compressor** to evaluate system-level performance, efficiency, and reliability.
 
 
 
